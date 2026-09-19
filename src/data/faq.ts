@@ -4,7 +4,7 @@ export interface FaqItem {
 }
 
 /**
- * Somente perguntas com resposta confirmada. Ainda faltam respostas oficiais para:
+ * Somente perguntas com resposta confirmada. Atualize "As inscrições estão abertas?" quando o status mudar. Ainda faltam respostas oficiais para:
  * critérios de elegibilidade, processo seletivo, custo, duração total, como ser mentora
  * e participação em mais de uma edição.
  */
@@ -18,6 +18,11 @@ export const faqItems: FaqItem[] = [
     pergunta: "Quem criou o programa?",
     resposta:
       "A executiva Vânia Neves. Em 2018, em uma experiência de inovação no Vale do Silício, ela percebeu que, entre cerca de 100 executivos, havia apenas duas mulheres negras. Esse incômodo virou o programa, que começou em 2 de agosto de 2021.",
+  },
+  {
+    pergunta: "As inscrições estão abertas?",
+    resposta:
+      "No momento, as inscrições estão fechadas. Acompanhe o Instagram @lidernegraoficial e o LinkedIn do LÍDERNEGRA, ou fale com a equipe pelo WhatsApp +55 21 97146-4241, para saber quando a próxima edição abre.",
   },
   {
     pergunta: "Quem pode participar?",

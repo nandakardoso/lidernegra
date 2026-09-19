@@ -7,8 +7,7 @@ export function Origem() {
     <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
       <div className="grid items-center gap-12 md:grid-cols-[minmax(0,1fr)_20rem] lg:grid-cols-[minmax(0,1fr)_24rem]">
         <div>
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-600">Por que existe</p>
-          <h2 className="mt-4 font-display text-3xl italic text-wine-900 md:text-4xl">
+          <h2 className="font-display text-3xl italic text-wine-900 md:text-4xl">
             Tudo começou com uma pergunta.
           </h2>
 

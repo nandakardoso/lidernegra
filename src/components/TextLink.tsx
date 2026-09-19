@@ -13,10 +13,10 @@ interface TextLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   tone?: Tone;
 }
 
-/** CTA em estilo de link sublinhado — nunca botão preenchido, conforme direção editorial da marca. */
+/** CTA secundário em estilo de link sublinhado. A ação principal usa o componente Botao. */
 export function TextLink({ to, tone = "onLight", className = "", children, href, ...rest }: TextLinkProps) {
   const base =
-    "inline-flex items-center gap-2 font-sans text-sm font-semibold uppercase tracking-[0.08em] underline decoration-2 underline-offset-8 transition-colors duration-200 hover:decoration-4";
+    "inline-flex min-h-11 items-center gap-2 font-sans text-sm font-semibold uppercase tracking-[0.08em] underline decoration-2 underline-offset-8 transition-colors duration-200 hover:decoration-4";
   const classes = `${base} ${toneClasses[tone]} ${className}`;
 
   if (to) {
@@ -30,6 +30,7 @@ export function TextLink({ to, tone = "onLight", className = "", children, href,
   return (
     <a href={href} className={classes} {...rest}>
       {children}
+      {rest.target === "_blank" && <span className="sr-only"> (abre em nova aba)</span>}
     </a>
   );
 }

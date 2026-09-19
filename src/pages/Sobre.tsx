@@ -188,7 +188,7 @@ export function Sobre() {
       <section className="bg-cream-100 py-20">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center gap-x-10 gap-y-4 px-6 md:px-10">
           <TextLink to="/mentoria">Conhecer o programa</TextLink>
-          <TextLink to="/inscreva-se">Quero participar</TextLink>
+          <TextLink to="/inscreva-se">Próxima edição</TextLink>
         </div>
       </section>
     </>

@@ -37,8 +37,8 @@ const metaPorRota: Record<string, { titulo: string; descricao: string }> = {
     descricao: "Respostas sobre o programa LÍDERNEGRA, quem pode participar e como apoiar.",
   },
   "/inscreva-se": {
-    titulo: `Quero participar | ${marca}`,
-    descricao: "Como acompanhar as inscrições do LÍDERNEGRA e falar com a equipe.",
+    titulo: `Próxima edição | ${marca}`,
+    descricao: "As inscrições estão fechadas no momento. Veja como acompanhar a próxima edição do LÍDERNEGRA.",
   },
   "/area-da-mentorada": {
     titulo: `Área da Mentorada | ${marca}`,

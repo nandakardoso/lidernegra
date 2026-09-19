@@ -7,8 +7,10 @@ export function Jornada({ resumo = false }: { resumo?: boolean }) {
     <section id="jornada" className="scroll-mt-20 bg-cream-100 py-24">
       <div className="mx-auto max-w-5xl px-6 md:px-10">
         <h2 className="font-display text-3xl italic text-wine-900 md:text-4xl">A Jornada LÍDERNEGRA</h2>
-        <p className="mt-4 max-w-2xl font-sans text-lg text-ink-700">
-          Cinco etapas que conduzem a trajetória de cada mentorada — da identidade de liderança à ação.
+        <p className="mt-4 max-w-2xl font-sans text-lg leading-relaxed text-ink-700">
+          O programa combina capacitação, mentoria com executivas experientes e o curso Fundamentos do
+          Pensamento Exponencial, da SingularityU Brazil. Cinco etapas conduzem cada mentorada, da identidade de
+          liderança à ação.
         </p>
 
         <ol className="mt-14 space-y-10">

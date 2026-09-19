@@ -18,7 +18,7 @@ export function MentoriaPage() {
       <MentorasSecao />
 
       <section className="mx-auto max-w-3xl px-6 py-24 text-center md:px-10">
-        <TextLink to="/inscreva-se">Quero fazer parte da próxima edição</TextLink>
+        <TextLink to="/inscreva-se">Acompanhar a próxima edição</TextLink>
       </section>
     </>
   );

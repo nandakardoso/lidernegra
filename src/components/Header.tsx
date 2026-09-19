@@ -54,7 +54,7 @@ export function Header() {
             to="/inscreva-se"
             className="whitespace-nowrap rounded-full bg-wine-900 px-5 py-2.5 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-wine-800"
           >
-            Quero participar
+            Próxima edição
           </Link>
         </nav>
 
@@ -113,7 +113,7 @@ export function Header() {
               onClick={() => setOpen(false)}
               className="block rounded-full bg-wine-900 px-5 py-3 text-center font-sans text-sm font-semibold text-cream-50"
             >
-              Quero participar
+              Próxima edição
             </Link>
           </li>
         </ul>

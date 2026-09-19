@@ -1,6 +1,5 @@
 import { Hero } from "../sections/Hero";
 import { Origem } from "../sections/Origem";
-import { OQueE } from "../sections/OQueE";
 import { Jornada } from "../sections/Jornada";
 import { Impacto } from "../sections/Impacto";
 import { Apoiadores } from "../sections/Apoiadores";
@@ -12,7 +11,6 @@ export function Home() {
     <>
       <Hero />
       <Origem />
-      <OQueE />
       <Jornada resumo />
       <Impacto comLink />
       <Apoiadores />

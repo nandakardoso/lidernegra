@@ -3,28 +3,29 @@ import { TextLink } from "../components/TextLink";
 
 export function Comunidade({ comLink = false }: { comLink?: boolean }) {
   return (
-    <section id="comunidade" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-24 md:px-10">
-      <p className="font-display text-2xl italic text-wine-900 md:text-3xl">
+    <section id="comunidade" className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24 md:px-10">
+      <h2 className="text-balance font-display text-3xl italic text-wine-900 md:text-5xl">
         Uma mentoria termina. Uma rede permanece.
+      </h2>
+      <p className="mt-6 max-w-2xl font-sans text-lg leading-relaxed text-ink-700">
+        A Comunidade LÍDERNEGRA é o espaço permanente de troca, apoio e oportunidades entre as mulheres da rede,
+        mesmo depois que a mentoria formal se encerra.
       </p>
 
-      <h2 className="mt-6 font-display text-3xl text-wine-900 md:text-4xl">Comunidade LÍDERNEGRA</h2>
-      <p className="mt-4 max-w-2xl font-sans text-lg text-ink-700">
-        O programa não termina quando a mentoria formal se encerra. A Comunidade LÍDERNEGRA é o espaço
-        permanente de troca, apoio e oportunidades entre as mulheres da rede.
-      </p>
-
-      <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+      <dl className="mt-14">
         {pilaresComunidade.map((pilar) => (
-          <div key={pilar.titulo} className="border-t border-wine-900/15 pt-5">
-            <h3 className="font-display text-lg text-wine-900">{pilar.titulo}</h3>
-            <p className="mt-2 font-sans text-sm leading-relaxed text-ink-700">{pilar.descricao}</p>
+          <div
+            key={pilar.titulo}
+            className="grid gap-2 border-t border-wine-900/15 py-6 md:grid-cols-[minmax(0,18rem)_1fr] md:gap-10"
+          >
+            <dt className="font-display text-xl text-wine-900">{pilar.titulo}</dt>
+            <dd className="font-sans text-base leading-relaxed text-ink-700">{pilar.descricao}</dd>
           </div>
         ))}
-      </div>
+      </dl>
 
       {comLink && (
-        <div className="mt-14">
+        <div className="mt-8">
           <TextLink to="/mentoria#comunidade">Conhecer a comunidade</TextLink>
         </div>
       )}
