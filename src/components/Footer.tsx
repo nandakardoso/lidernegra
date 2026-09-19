@@ -31,7 +31,7 @@ export function Footer() {
                 <a className="hover:text-gold-400" href="https://www.instagram.com/lidernegraoficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
               </li>
               <li>
-                <a className="hover:text-gold-400" href="[INSERIR LINK DO LINKEDIN]">LinkedIn</a>
+                <a className="hover:text-gold-400" href="https://www.linkedin.com/company/lidernegra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </li>
               <li>
                 <a
