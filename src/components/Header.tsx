@@ -6,9 +6,6 @@ const navItems = [
   { to: "/", label: "Início" },
   { to: "/sobre", label: "Nossa história" },
   { to: "/mentoria", label: "O programa" },
-  { to: "/impacto", label: "Impacto" },
-  { to: "/mentoras", label: "Mentoras" },
-  { to: "/comunidade", label: "Comunidade" },
   { to: "/parcerias", label: "Parcerias" },
   { to: "/faq", label: "FAQ" },
 ];
@@ -36,7 +33,7 @@ export function Header() {
           <img src={logo} alt="LÍDERNEGRA" width={491} height={86} className="h-10 w-auto md:h-11" />
         </Link>
 
-        <nav className="hidden items-center gap-5 xl:flex" aria-label="Navegação principal">
+        <nav className="hidden items-center gap-8 lg:flex" aria-label="Navegação principal">
           {navItems.filter((item) => item.to !== "/").map((item) => (
             <NavLink
               key={item.to}
@@ -63,7 +60,7 @@ export function Header() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-full text-wine-900 xl:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full text-wine-900 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
@@ -83,7 +80,7 @@ export function Header() {
         id="mobile-nav"
         hidden={!open}
         aria-label="Navegação principal (mobile)"
-        className="border-t border-wine-800/10 bg-cream-50 px-6 pb-6 pt-2 xl:hidden"
+        className="border-t border-wine-800/10 bg-cream-50 px-6 pb-6 pt-2 lg:hidden"
       >
         <ul className="flex flex-col gap-1">
           {navItems.map((item) => (

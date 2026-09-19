@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { PageHero } from "../components/PageHero";
 import { TextLink } from "../components/TextLink";
+import { Impacto } from "../sections/Impacto";
+import { PalavrasEdicao } from "../sections/PalavrasEdicao";
 import {
   capitulosHistoria,
   fechamentoHistoria,
@@ -139,6 +141,9 @@ export function Sobre() {
         </div>
       </section>
 
+      <Impacto />
+      <PalavrasEdicao />
+
       <section className="mx-auto max-w-3xl px-6 py-24 md:px-10">
         <h3 className="font-display text-2xl italic text-wine-900 md:text-3xl">Uma jornada que continua</h3>
         <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-ink-700">
@@ -157,8 +162,7 @@ export function Sobre() {
 
       <section className="bg-cream-100 py-20">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center gap-x-10 gap-y-4 px-6 md:px-10">
-          <TextLink to="/mentoria">Conhecer a jornada</TextLink>
-          <TextLink to="/impacto">Ver o impacto</TextLink>
+          <TextLink to="/mentoria">Conhecer o programa</TextLink>
           <TextLink to="/inscreva-se">Quero participar</TextLink>
         </div>
       </section>

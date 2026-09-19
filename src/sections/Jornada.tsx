@@ -1,9 +1,10 @@
 import { jornadaLiderNegra } from "../data/jornada";
 import { NumberBadge } from "../components/NumberBadge";
+import { TextLink } from "../components/TextLink";
 
-export function Jornada() {
+export function Jornada({ resumo = false }: { resumo?: boolean }) {
   return (
-    <section className="bg-cream-100 py-24">
+    <section id="jornada" className="scroll-mt-20 bg-cream-100 py-24">
       <div className="mx-auto max-w-5xl px-6 md:px-10">
         <h2 className="font-display text-3xl italic text-wine-900 md:text-4xl">A Jornada LÍDERNEGRA</h2>
         <p className="mt-4 max-w-2xl font-sans text-lg text-ink-700">
@@ -17,7 +18,7 @@ export function Jornada() {
               <div>
                 <h3 className="font-display text-xl text-wine-900 md:text-2xl">{etapa.titulo}</h3>
                 <p className="mt-2 font-sans text-base text-ink-700">{etapa.objetivo}</p>
-                <ul className="mt-4 flex flex-wrap gap-2">
+                <ul hidden={resumo} className="mt-4 flex flex-wrap gap-2">
                   {etapa.modulos.map((modulo) => (
                     <li
                       key={modulo}
@@ -31,6 +32,11 @@ export function Jornada() {
             </li>
           ))}
         </ol>
+        {resumo && (
+          <div className="mt-12">
+            <TextLink to="/mentoria#jornada">Ver os módulos de cada etapa</TextLink>
+          </div>
+        )}
       </div>
     </section>
   );

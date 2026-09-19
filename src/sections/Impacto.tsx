@@ -3,7 +3,7 @@ import { TextLink } from "../components/TextLink";
 
 export function Impacto({ comLink = false }: { comLink?: boolean }) {
   return (
-    <section className="bg-wine-950 py-24 text-cream-50">
+    <section id="impacto" className="scroll-mt-20 bg-wine-950 py-24 text-cream-50">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-400">Impacto</p>
         <h2 className="mt-4 font-display text-3xl italic md:text-4xl">O que a rede já construiu</h2>
@@ -24,7 +24,7 @@ export function Impacto({ comLink = false }: { comLink?: boolean }) {
 
         {comLink && (
           <div className="mt-8">
-            <TextLink to="/impacto" tone="onDark">
+            <TextLink to="/sobre#impacto" tone="onDark">
               Ver mais sobre o impacto
             </TextLink>
           </div>

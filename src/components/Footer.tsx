@@ -18,9 +18,6 @@ export function Footer() {
             <ul className="mt-3 space-y-2 text-sm">
               <li><Link className="hover:text-gold-400" to="/sobre">Nossa história</Link></li>
               <li><Link className="hover:text-gold-400" to="/mentoria">O programa</Link></li>
-              <li><Link className="hover:text-gold-400" to="/impacto">Impacto</Link></li>
-              <li><Link className="hover:text-gold-400" to="/mentoras">Mentoras</Link></li>
-              <li><Link className="hover:text-gold-400" to="/comunidade">Comunidade</Link></li>
               <li><Link className="hover:text-gold-400" to="/parcerias">Parcerias</Link></li>
               <li><Link className="hover:text-gold-400" to="/faq">Perguntas frequentes</Link></li>
               <li><Link className="hover:text-gold-400" to="/inscreva-se">Quero participar</Link></li>

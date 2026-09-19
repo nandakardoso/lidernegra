@@ -12,9 +12,9 @@ export function Home() {
       <Hero />
       <Origem />
       <OQueE />
-      <Jornada />
+      <Jornada resumo />
       <Impacto comLink />
-      <Comunidade />
+      <Comunidade comLink />
       <Convite />
     </>
   );

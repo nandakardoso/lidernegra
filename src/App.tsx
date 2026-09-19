@@ -1,12 +1,9 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { Sobre } from "./pages/Sobre";
 import { MentoriaPage } from "./pages/Mentoria";
-import { ImpactoPage } from "./pages/ImpactoPage";
-import { Mentoras } from "./pages/Mentoras";
-import { ComunidadePage } from "./pages/ComunidadePage";
 import { Parcerias } from "./pages/Parcerias";
 import { FaqPage } from "./pages/FaqPage";
 import { Inscricao } from "./pages/Inscricao";
@@ -25,23 +22,11 @@ const metaPorRota: Record<string, { titulo: string; descricao: string }> = {
   "/sobre": {
     titulo: `Nossa história | ${marca}`,
     descricao:
-      "Como um incômodo no Vale do Silício, em 2018, virou o LÍDERNEGRA: da primeira turma, em 2021, à 6ª edição, em 2026.",
+      "Como um incômodo no Vale do Silício, em 2018, virou o LÍDERNEGRA. Da primeira turma, em 2021, à 6ª edição, com números de impacto.",
   },
   "/mentoria": {
-    titulo: `A jornada | ${marca}`,
-    descricao: "As cinco etapas da jornada LÍDERNEGRA: da identidade de liderança à ação.",
-  },
-  "/impacto": {
-    titulo: `Impacto | ${marca}`,
-    descricao: "Números informados pelo programa: 6 edições, quase 200 mulheres formadas e mais de 750 inscritas em 2026.",
-  },
-  "/mentoras": {
-    titulo: `Mentoras | ${marca}`,
-    descricao: "Profissionais experientes que dedicam, de forma voluntária, tempo e conhecimento a outras mulheres.",
-  },
-  "/comunidade": {
-    titulo: `Comunidade | ${marca}`,
-    descricao: "Uma mentoria termina, uma rede permanece: networking, oportunidades e aprendizado contínuo.",
+    titulo: `O programa | ${marca}`,
+    descricao: "A jornada em cinco etapas, a comunidade e as mentoras do LÍDERNEGRA.",
   },
   "/parcerias": {
     titulo: `Parcerias | ${marca}`,
@@ -66,10 +51,17 @@ const metaPorRota: Record<string, { titulo: string; descricao: string }> = {
 };
 
 function RouteEffects() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (hash) {
+      const alvo = document.getElementById(hash.slice(1));
+      if (alvo) {
+        alvo.scrollIntoView();
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
     const meta = metaPorRota[pathname] ?? {
       titulo: `Página não encontrada | ${marca}`,
       descricao: "A página procurada não existe.",
@@ -78,7 +70,7 @@ function RouteEffects() {
     document.querySelector('meta[name="description"]')?.setAttribute("content", meta.descricao);
     document.querySelector('meta[property="og:title"]')?.setAttribute("content", meta.titulo);
     document.querySelector('meta[property="og:description"]')?.setAttribute("content", meta.descricao);
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }
@@ -92,9 +84,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/mentoria" element={<MentoriaPage />} />
-          <Route path="/impacto" element={<ImpactoPage />} />
-          <Route path="/mentoras" element={<Mentoras />} />
-          <Route path="/comunidade" element={<ComunidadePage />} />
+          <Route path="/impacto" element={<Navigate to="/sobre#impacto" replace />} />
+          <Route path="/mentoras" element={<Navigate to="/mentoria#mentoras" replace />} />
+          <Route path="/comunidade" element={<Navigate to="/mentoria#comunidade" replace />} />
           <Route path="/parcerias" element={<Parcerias />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/inscreva-se" element={<Inscricao />} />

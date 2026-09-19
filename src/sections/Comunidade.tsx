@@ -1,9 +1,9 @@
 import { pilaresComunidade } from "../data/jornada";
 import { TextLink } from "../components/TextLink";
 
-export function Comunidade() {
+export function Comunidade({ comLink = false }: { comLink?: boolean }) {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
+    <section id="comunidade" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-24 md:px-10">
       <p className="font-display text-2xl italic text-wine-900 md:text-3xl">
         Uma mentoria termina. Uma rede permanece.
       </p>
@@ -23,9 +23,11 @@ export function Comunidade() {
         ))}
       </div>
 
-      <div className="mt-14">
-        <TextLink to="/comunidade">Conhecer a comunidade</TextLink>
-      </div>
+      {comLink && (
+        <div className="mt-14">
+          <TextLink to="/mentoria#comunidade">Conhecer a comunidade</TextLink>
+        </div>
+      )}
     </section>
   );
 }
