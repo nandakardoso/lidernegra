@@ -122,3 +122,13 @@ export const fechamentoHistoria: string[] = [
   "Quando uma mulher abre uma porta e ajuda outra a atravessá-la.",
   "E quando uma trajetória deixa de ser apenas individual e passa a abrir caminho para muitas outras.",
 ];
+
+/**
+ * Foto de impacto exibida em "Uma jornada que continua". Enquanto for `undefined`, o texto ocupa a largura toda.
+ * Para incluir: coloque o arquivo em `public/` e preencha, por exemplo:
+ *   { src: "/fotos/jornada.jpg", alt: "Descrição da foto", legenda: "Turma da 6ª edição, 2026" }
+ */
+export const fotoJornada: { src: string; alt: string; legenda?: string } | undefined = {
+  src: "/fotos/jornada.jpg",
+  alt: "Cinco mulheres negras em traje profissional posam juntas em um espaço com teto de vidro, sorrindo para a câmera.",
+};

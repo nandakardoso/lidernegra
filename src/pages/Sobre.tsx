@@ -6,6 +6,7 @@ import { PalavrasEdicao } from "../sections/PalavrasEdicao";
 import {
   capitulosHistoria,
   fechamentoHistoria,
+  fotoJornada,
   jornadaContinua,
   origemContinuacao,
   origemHistoria,
@@ -144,20 +145,44 @@ export function Sobre() {
       <Impacto />
       <PalavrasEdicao />
 
-      <section className="mx-auto max-w-3xl px-6 py-24 md:px-10">
-        <h3 className="font-display text-2xl italic text-wine-900 md:text-3xl">Uma jornada que continua</h3>
-        <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-ink-700">
-          {jornadaContinua.map((p) => (
-            <p key={p}>{p}</p>
-          ))}
+      <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
+        <div
+          className={
+            fotoJornada ? "grid items-center gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16" : "max-w-3xl"
+          }
+        >
+          <div>
+            <h3 className="font-display text-2xl italic text-wine-900 md:text-3xl">Uma jornada que continua</h3>
+            <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-ink-700">
+              {jornadaContinua.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+            <div className="mt-8 space-y-2 font-display text-lg italic text-wine-900">
+              {fechamentoHistoria.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+            <p className="mt-10 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-wine-900">
+              LÍDERNEGRA
+            </p>
+            <p className="mt-1 font-display text-xl italic text-gold-600">Orienta. Empodera. Transforma.</p>
+          </div>
+
+          {fotoJornada && (
+            <figure>
+              <img
+                src={fotoJornada.src}
+                alt={fotoJornada.alt}
+                loading="lazy"
+                className="aspect-[4/5] w-full rounded-sm object-cover object-top"
+              />
+              {fotoJornada.legenda && (
+                <figcaption className="mt-3 font-sans text-sm text-ink-500">{fotoJornada.legenda}</figcaption>
+              )}
+            </figure>
+          )}
         </div>
-        <div className="mt-8 space-y-2 font-display text-lg italic text-wine-900">
-          {fechamentoHistoria.map((p) => (
-            <p key={p}>{p}</p>
-          ))}
-        </div>
-        <p className="mt-10 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-wine-900">LÍDERNEGRA</p>
-        <p className="mt-1 font-display text-xl italic text-gold-600">Orienta. Empodera. Transforma.</p>
       </section>
 
       <section className="bg-cream-100 py-20">
