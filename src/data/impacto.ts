@@ -3,31 +3,17 @@ export interface Indicador {
   label: string;
 }
 
-// Números reais ainda não fornecidos — todos os valores abaixo são placeholders
-// claramente identificados. Substituir por dados reais quando disponíveis.
+/** Números informados pelo próprio LÍDERNEGRA. Só incluir aqui dados oficiais. */
 export const indicadoresImpacto: Indicador[] = [
-  { valor: "6ª", label: "edição do programa" },
-  { valor: "[INSERIR NÚMERO]", label: "de mulheres inscritas" },
-  { valor: "[INSERIR NÚMERO]", label: "de mentoras" },
-  { valor: "[INSERIR NÚMERO]", label: "de mentoradas formadas" },
-  { valor: "[INSERIR NÚMERO]", label: "de horas de mentoria" },
+  { valor: "6", label: "edições desde 2021" },
+  { valor: "quase 200", label: "mulheres formadas ao longo da história do programa" },
+  { valor: "750+", label: "mulheres inscritas na 6ª edição, em 2026" },
+  { valor: "86%", label: "das participantes da primeira turma declararam aumento de autoconfiança" },
+  {
+    valor: "73%",
+    label: "da primeira turma relataram avanços profissionais: promoção, nova empresa, reconhecimento ou aumento salarial",
+  },
 ];
 
-export const historicoLinhaDoTempo = [
-  {
-    titulo: "Início",
-    descricao: "Nascimento da iniciativa e construção da comunidade.",
-  },
-  {
-    titulo: "Expansão",
-    descricao: "Novas participantes, mentoras e conexões.",
-  },
-  {
-    titulo: "Impacto",
-    descricao: "Histórias de desenvolvimento e transformação.",
-  },
-  {
-    titulo: "Hoje — 6ª edição",
-    descricao: "Uma comunidade que continua criando oportunidades e fortalecendo mulheres.",
-  },
-];
+/** Palavras escolhidas pelas participantes no primeiro encontro da 6ª edição. */
+export const palavrasSextaEdicao = ["Aquilombamento", "União", "Pertencimento", "Motivação", "Comunidade"];

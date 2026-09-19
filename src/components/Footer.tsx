@@ -10,17 +10,20 @@ export function Footer() {
         <div className="mt-10 grid gap-10 border-t border-cream-100/10 pt-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <img src={logo} alt="LÍDERNEGRA" width={491} height={86} className="h-12 w-auto" />
-            <p className="mt-2 text-sm text-cream-100/70">Orienta, Empodera e Transforma.</p>
+            <p className="mt-2 text-sm text-cream-100/80">Orienta, Empodera e Transforma.</p>
           </div>
 
           <nav aria-label="Navegação do rodapé">
             <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-gold-400">Navegação</h2>
             <ul className="mt-3 space-y-2 text-sm">
-              <li><Link className="hover:text-gold-400" to="/sobre">Sobre o LÍDERNEGRA</Link></li>
-              <li><Link className="hover:text-gold-400" to="/mentoria">Mentoria</Link></li>
+              <li><Link className="hover:text-gold-400" to="/sobre">Nossa história</Link></li>
+              <li><Link className="hover:text-gold-400" to="/mentoria">O programa</Link></li>
+              <li><Link className="hover:text-gold-400" to="/impacto">Impacto</Link></li>
               <li><Link className="hover:text-gold-400" to="/mentoras">Mentoras</Link></li>
               <li><Link className="hover:text-gold-400" to="/comunidade">Comunidade</Link></li>
-              <li><Link className="hover:text-gold-400" to="/inscreva-se">Inscreva-se</Link></li>
+              <li><Link className="hover:text-gold-400" to="/parcerias">Parcerias</Link></li>
+              <li><Link className="hover:text-gold-400" to="/faq">Perguntas frequentes</Link></li>
+              <li><Link className="hover:text-gold-400" to="/inscreva-se">Quero participar</Link></li>
             </ul>
           </nav>
 

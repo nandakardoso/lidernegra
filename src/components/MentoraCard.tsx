@@ -16,7 +16,7 @@ export function MentoraCard({ mentora, onOpen }: MentoraCardProps) {
         aria-hidden="true"
         className="flex h-20 w-20 items-center justify-center rounded-full bg-wine-900/8 font-display text-2xl italic text-wine-800"
       >
-        {mentora.nome === "[INSERIR NOME DA MENTORA]" ? "?" : mentora.nome.charAt(0)}
+        {mentora.nome.charAt(0)}
       </span>
       <h3 className="mt-5 font-display text-xl text-wine-900 group-hover:underline group-hover:decoration-gold-500">
         {mentora.nome}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PageHero } from "../components/PageHero";
-import { jornadaParticipante } from "../data/historia";
+import { TextLink } from "../components/TextLink";
 import {
   capitulosHistoria,
   fechamentoHistoria,
@@ -10,14 +10,13 @@ import {
   perguntaOrigem,
 } from "../data/historiaLiderNegra";
 import vania from "../assets/vania-neves.jpg";
-import { NumberBadge } from "../components/NumberBadge";
 
 export function Sobre() {
   const [aberto, setAberto] = useState<string | null>(null);
 
   return (
     <>
-      <PageHero kicker="Sobre o LÍDERNEGRA" titulo="Uma rede que cresce a cada trajetória">
+      <PageHero kicker="Nossa história" titulo="Uma rede que cresce a cada trajetória">
         Orienta, empodera e transforma: o propósito por trás de cada edição do programa.
       </PageHero>
 
@@ -156,24 +155,11 @@ export function Sobre() {
         <p className="mt-1 font-display text-xl italic text-gold-600">Orienta. Empodera. Transforma.</p>
       </section>
 
-      <section className="bg-cream-100 py-24">
-        <div className="mx-auto max-w-4xl px-6 md:px-10">
-          <h2 className="font-display text-2xl italic text-wine-900 md:text-3xl">Como funciona</h2>
-          <p className="mt-4 max-w-xl font-sans text-base text-ink-700">
-            A jornada de cada participante, do primeiro interesse à transformação.
-          </p>
-
-          <ol className="mt-10 space-y-8">
-            {jornadaParticipante.map((etapa, i) => (
-              <li key={etapa.titulo} className="flex gap-6">
-                <NumberBadge numero={String(i + 1).padStart(2, "0")} />
-                <div className="pt-2">
-                  <h3 className="font-display text-lg text-wine-900">{etapa.titulo}</h3>
-                  <p className="mt-1 font-sans text-sm text-ink-700">{etapa.descricao}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+      <section className="bg-cream-100 py-20">
+        <div className="mx-auto flex max-w-3xl flex-wrap items-center gap-x-10 gap-y-4 px-6 md:px-10">
+          <TextLink to="/mentoria">Conhecer a jornada</TextLink>
+          <TextLink to="/impacto">Ver o impacto</TextLink>
+          <TextLink to="/inscreva-se">Quero participar</TextLink>
         </div>
       </section>
     </>

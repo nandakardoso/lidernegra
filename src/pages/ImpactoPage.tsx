@@ -1,15 +1,15 @@
 import { PageHero } from "../components/PageHero";
 import { Impacto } from "../sections/Impacto";
-import { Depoimentos } from "../sections/Depoimentos";
+import { PalavrasEdicao } from "../sections/PalavrasEdicao";
 
 export function ImpactoPage() {
   return (
     <>
       <PageHero kicker="Impacto" titulo="O que a rede já construiu">
-        Os números e histórias que traduzem o alcance do LÍDERNEGRA a cada edição.
+        Números informados pelo próprio programa e as palavras das mulheres que o vivem.
       </PageHero>
       <Impacto />
-      <Depoimentos />
+      <PalavrasEdicao />
     </>
   );
 }

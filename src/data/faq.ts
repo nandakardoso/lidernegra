@@ -3,49 +3,45 @@ export interface FaqItem {
   resposta: string;
 }
 
+/**
+ * Somente perguntas com resposta confirmada. Ainda faltam respostas oficiais para:
+ * critérios de elegibilidade, processo seletivo, custo, duração total, como ser mentora
+ * e participação em mais de uma edição.
+ */
 export const faqItems: FaqItem[] = [
+  {
+    pergunta: "O que é o LÍDERNEGRA?",
+    resposta:
+      "É um programa de mentoria sem fins lucrativos, criado em 2021, que apoia o desenvolvimento de mulheres negras que desejam crescer profissionalmente e ocupar posições de liderança. Combina capacitação, mentoria com executivas experientes e pensamento exponencial.",
+  },
+  {
+    pergunta: "Quem criou o programa?",
+    resposta:
+      "A executiva Vânia Neves. Em 2018, em uma experiência de inovação no Vale do Silício, ela percebeu que, entre cerca de 100 executivos, havia apenas duas mulheres negras. Esse incômodo virou o programa, que começou em 2 de agosto de 2021.",
+  },
   {
     pergunta: "Quem pode participar?",
     resposta:
-      "O programa é voltado a mulheres negras e pardas interessadas em desenvolvimento de carreira, liderança e protagonismo profissional. [INSERIR CRITÉRIOS ESPECÍFICOS DE ELEGIBILIDADE]",
+      "O programa é voltado a mulheres negras que desejam crescer profissionalmente e ocupar posições de liderança.",
   },
   {
-    pergunta: "Como funciona a seleção?",
-    resposta: "[INSERIR DESCRIÇÃO DO PROCESSO SELETIVO DA EDIÇÃO ATUAL]",
-  },
-  {
-    pergunta: "A mentoria é gratuita?",
-    resposta: "[INSERIR INFORMAÇÃO SOBRE CUSTOS OU GRATUIDADE DO PROGRAMA]",
-  },
-  {
-    pergunta: "Quanto tempo dura o programa?",
+    pergunta: "Quem são as mentoras?",
     resposta:
-      "A 6ª edição do LÍDERNEGRA percorre cinco etapas — Eu como Líder, Liderança e Influência, Pensamento Estratégico e Inovação, Gestão para Geração de Valor e Liderança em Ação. [INSERIR DURAÇÃO TOTAL EM MESES/SEMANAS]",
+      "Profissionais experientes que dedicam, de forma voluntária, tempo, conhecimento e experiência ao desenvolvimento de outras mulheres.",
   },
   {
-    pergunta: "Como são escolhidas as mentoras?",
-    resposta: "[INSERIR CRITÉRIOS DE SELEÇÃO DE MENTORAS]",
-  },
-  {
-    pergunta: "Como funciona o relacionamento entre mentora e mentorada?",
-    resposta: "[INSERIR DESCRIÇÃO DA DINÂMICA DE MENTORIA — frequência, formato, duração dos encontros]",
-  },
-  {
-    pergunta: "Posso participar de outra edição?",
-    resposta: "[INSERIR POLÍTICA SOBRE PARTICIPAÇÃO EM MÚLTIPLAS EDIÇÕES]",
+    pergunta: "O que a jornada inclui?",
+    resposta:
+      "Cinco etapas: Eu como Líder, Liderança e Influência, Pensamento Estratégico e Inovação, Gestão para Geração de Valor e Liderança em Ação. Também há a Comunidade LÍDERNEGRA, que segue ativa depois da mentoria.",
   },
   {
     pergunta: "Como minha empresa pode apoiar?",
     resposta:
-      "Empresas podem contribuir como patrocinadoras, parceiras institucionais, oferecendo cursos através da Comunidade LÍDERNEGRA ou apoiando eventos. Fale com a nossa equipe pelo formulário de contato.",
-  },
-  {
-    pergunta: "Como posso ser mentora?",
-    resposta: "[INSERIR PROCESSO PARA CANDIDATURA DE NOVAS MENTORAS]",
+      "Empresas podem contribuir como patrocinadoras, parceiras institucionais, com cursos pela Comunidade LÍDERNEGRA ou apoiando eventos. Fale com a equipe pelo WhatsApp +55 21 97146-4241.",
   },
   {
     pergunta: "Onde acompanho as próximas inscrições?",
     resposta:
-      "Acompanhe nossas redes sociais e cadastre-se na newsletter para ser avisada sobre a abertura da próxima edição. [INSERIR LINKS DE REDES SOCIAIS]",
+      "No Instagram @lidernegraoficial e no LinkedIn do LÍDERNEGRA. Você também pode falar com a equipe pelo WhatsApp +55 21 97146-4241.",
   },
 ];

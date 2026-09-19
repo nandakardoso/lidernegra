@@ -5,7 +5,11 @@ export function Privacidade() {
     <>
       <PageHero kicker="Institucional" titulo="Política de Privacidade" />
       <section className="mx-auto max-w-3xl px-6 py-24 font-sans text-base leading-relaxed text-ink-700 md:px-10">
-        <p>[INSERIR TEXTO COMPLETO DA POLÍTICA DE PRIVACIDADE DO PROGRAMA LÍDERNEGRA]</p>
+        <p>
+          Este site não coleta dados por formulário. Os contatos acontecem por canais externos, como WhatsApp,
+          Instagram e LinkedIn, que seguem as políticas de cada plataforma. A política de privacidade completa
+          do programa está em elaboração.
+        </p>
       </section>
     </>
   );

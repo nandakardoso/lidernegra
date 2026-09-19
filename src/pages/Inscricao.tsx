@@ -1,101 +1,50 @@
-import { useState, type FormEvent } from "react";
 import { PageHero } from "../components/PageHero";
-
-const inputClasses =
-  "mt-2 w-full rounded-lg border border-wine-900/20 bg-cream-50 px-4 py-3 font-sans text-base text-ink-900 placeholder:text-ink-500/50 focus:border-wine-800 focus:outline-none";
+import { TextLink } from "../components/TextLink";
+import { contato } from "../data/contato";
 
 export function Inscricao() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    // Sem integração de backend definida ainda. Estrutura pronta para conectar
-    // a uma ferramenta externa de formulários (ex.: um endpoint próprio, Typeform, etc.).
-    setSubmitted(true);
-  }
-
   return (
     <>
-      <PageHero kicker="Inscreva-se" titulo="Faça parte da próxima edição">
-        O LÍDERNEGRA é voltado a mulheres negras e pardas interessadas em desenvolvimento de carreira e
-        liderança. [INSERIR CRITÉRIOS DETALHADOS DE ELEGIBILIDADE DA PRÓXIMA EDIÇÃO]
+      <PageHero kicker="Quero participar" titulo="Faça parte da rede LÍDERNEGRA">
+        O programa é voltado a mulheres negras que desejam crescer profissionalmente e ocupar posições de
+        liderança.
       </PageHero>
 
-      <section className="mx-auto max-w-2xl px-6 py-24 md:px-10">
-        {submitted ? (
-          <div role="status" className="border-t-2 border-gold-500 pt-6">
-            <h2 className="font-display text-2xl italic text-wine-900">Inscrição recebida.</h2>
-            <p className="mt-3 font-sans text-base text-ink-700">
-              Obrigada pelo interesse em fazer parte do LÍDERNEGRA. [INSERIR MENSAGEM DEFINITIVA DE
-              CONFIRMAÇÃO E PRÓXIMOS PASSOS]
-            </p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-            <div>
-              <label htmlFor="nome" className="font-sans text-sm font-semibold text-wine-900">
-                Nome completo
-              </label>
-              <input id="nome" name="nome" type="text" required autoComplete="name" className={inputClasses} />
-            </div>
+      <section className="mx-auto max-w-3xl px-6 py-24 md:px-10">
+        <h2 className="font-display text-2xl italic text-wine-900 md:text-3xl">Como acompanhar as inscrições</h2>
+        <p className="mt-4 font-sans text-lg leading-relaxed text-ink-700">
+          As inscrições abrem a cada edição. Na 6ª edição, em 2026, mais de 750 mulheres se inscreveram. Os
+          anúncios de abertura saem nas redes do programa, e a equipe responde dúvidas pelo WhatsApp.
+        </p>
 
-            <div>
-              <label htmlFor="email" className="font-sans text-sm font-semibold text-wine-900">
-                E-mail
-              </label>
-              <input id="email" name="email" type="email" required autoComplete="email" className={inputClasses} />
+        <ul className="mt-10 space-y-6">
+          <li className="border-t border-wine-900/15 pt-6">
+            <h3 className="font-display text-xl text-wine-900">WhatsApp</h3>
+            <p className="mt-1 font-sans text-base text-ink-700">{contato.whatsappTexto}</p>
+            <div className="mt-3">
+              <TextLink href={contato.whatsapp} target="_blank" rel="noopener noreferrer">
+                Falar com a equipe
+              </TextLink>
             </div>
-
-            <div>
-              <label htmlFor="whatsapp" className="font-sans text-sm font-semibold text-wine-900">
-                WhatsApp
-              </label>
-              <input id="whatsapp" name="whatsapp" type="tel" required autoComplete="tel" className={inputClasses} />
+          </li>
+          <li className="border-t border-wine-900/15 pt-6">
+            <h3 className="font-display text-xl text-wine-900">Instagram</h3>
+            <p className="mt-1 font-sans text-base text-ink-700">@lidernegraoficial</p>
+            <div className="mt-3">
+              <TextLink href={contato.instagram} target="_blank" rel="noopener noreferrer">
+                Seguir no Instagram
+              </TextLink>
             </div>
-
-            <div>
-              <label htmlFor="cidade" className="font-sans text-sm font-semibold text-wine-900">
-                Cidade/Estado
-              </label>
-              <input id="cidade" name="cidade" type="text" required className={inputClasses} />
+          </li>
+          <li className="border-t border-wine-900/15 pt-6">
+            <h3 className="font-display text-xl text-wine-900">LinkedIn</h3>
+            <div className="mt-3">
+              <TextLink href={contato.linkedin} target="_blank" rel="noopener noreferrer">
+                Acompanhar no LinkedIn
+              </TextLink>
             </div>
-
-            <div>
-              <label htmlFor="cargo" className="font-sans text-sm font-semibold text-wine-900">
-                Cargo/profissão
-              </label>
-              <input id="cargo" name="cargo" type="text" required className={inputClasses} />
-            </div>
-
-            <div>
-              <label htmlFor="linkedin" className="font-sans text-sm font-semibold text-wine-900">
-                LinkedIn
-              </label>
-              <input id="linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/..." className={inputClasses} />
-            </div>
-
-            <div>
-              <label htmlFor="motivo" className="font-sans text-sm font-semibold text-wine-900">
-                Por que deseja participar?
-              </label>
-              <textarea id="motivo" name="motivo" required rows={4} className={inputClasses} />
-            </div>
-
-            <div>
-              <label htmlFor="origem" className="font-sans text-sm font-semibold text-wine-900">
-                Como conheceu o LÍDERNEGRA?
-              </label>
-              <input id="origem" name="origem" type="text" className={inputClasses} />
-            </div>
-
-            <button
-              type="submit"
-              className="mt-4 rounded-full bg-wine-900 px-8 py-3.5 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-wine-800"
-            >
-              Quero me inscrever
-            </button>
-          </form>
-        )}
+          </li>
+        </ul>
       </section>
     </>
   );

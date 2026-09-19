@@ -1,25 +1,21 @@
 import { Hero } from "../sections/Hero";
+import { Origem } from "../sections/Origem";
 import { OQueE } from "../sections/OQueE";
 import { Jornada } from "../sections/Jornada";
-import { Pilares } from "../sections/Pilares";
 import { Impacto } from "../sections/Impacto";
 import { Comunidade } from "../sections/Comunidade";
-import { Depoimentos } from "../sections/Depoimentos";
-import { ParaEmpresas } from "../sections/ParaEmpresas";
-import { Faq } from "../sections/Faq";
+import { Convite } from "../sections/Convite";
 
 export function Home() {
   return (
     <>
       <Hero />
+      <Origem />
       <OQueE />
       <Jornada />
-      <Pilares />
-      <Impacto />
+      <Impacto comLink />
       <Comunidade />
-      <Depoimentos />
-      <ParaEmpresas />
-      <Faq />
+      <Convite />
     </>
   );
 }
