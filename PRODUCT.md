@@ -12,7 +12,7 @@ React + Vite + TypeScript + Tailwind CSS (confirmado pelo usuário).
 
 ## Users
 
-- **Mulheres negras e pardas** interessadas em desenvolvimento profissional, liderança, carreira, empreendedorismo, networking, autoconhecimento, protagonismo e troca com outras mulheres. Público principal do site: potenciais inscritas na mentoria.
+- **Mulheres negras** (o material oficial de história usa "mulheres negras"; validar se o público inclui "e pardas") interessadas em desenvolvimento profissional, liderança, carreira, empreendedorismo, networking, autoconhecimento, protagonismo e troca com outras mulheres. Público principal do site: potenciais inscritas na mentoria.
 - **Mentoras**: mulheres profissionais que desejam compartilhar experiência e conhecimento, contribuindo para o desenvolvimento de outras mulheres.
 - **Empresas e organizações**: potenciais parceiras, patrocinadoras ou apoiadoras da iniciativa.
 - **Comunidade geral**: pessoas interessadas em conhecer e divulgar a iniciativa.
@@ -36,15 +36,17 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
   - Mais uma dimensão paralela e permanente, a **Comunidade LÍDERNEGRA**: Networking, Compartilhamento de oportunidades, Eventos e conteúdo, Apoio/conexão e aprendizado contínuo, Cursos de Instituições Apoiadoras.
 - Cada edição é dividida em etapas nomeadas (ex.: a etapa "CAPACITAÇÃO" observada no material real cobre os módulos 1-4 da jornada).
 - Formulário de inscrição deve estar preparado para futura integração com ferramentas externas (não especificado qual).
-- **Não confirmado**: nomes de mentoras/fundadora, números de participantes por edição, depoimentos, empresas parceiras/apoiadoras específicas — seguem como placeholders.
+- **Ainda não confirmado**: critérios de elegibilidade e seleção, custo, duração total, perfis das mentoras, depoimentos e apoiadores.
 
 ## Capabilities and Constraints
 
-- Site institucional multi-seção (não apenas landing page single-purpose): Início, Sobre o LíderNegra, Mentoria, Impacto, Mentoras, Comunidade, Inscreva-se, além de seções de FAQ, Para Empresas/Parceiros e Rodapé.
-- Formulário de inscrição com campos: Nome, E-mail, WhatsApp, Cidade/Estado, Cargo/profissão, LinkedIn, motivo do interesse, como conheceu o LíderNegra — sem backend definido ainda (preparar estrutura para integração futura).
-- Nenhum dado real (nomes de mentoras/mentoradas, números de impacto, depoimentos, patrocinadores, datas, cargos) está disponível no momento. Todo o conteúdo institucional deve usar placeholders claramente identificados (ex.: `[INSERIR NÚMERO DE MENTORADAS]`, `[INSERIR NOME DA FUNDADORA]`, `[INSERIR LINK DO INSTAGRAM]`) — nunca inventar como se fossem reais.
-- Site deve ser responsivo (mobile first), acessível, rápido, com boas práticas de SEO (title, meta description, Open Graph, headings semânticos, alt text) e performance (lazy loading, imagens otimizadas).
-- Organização de projeto esperada: components/, pages/, sections/, assets/, data/, styles/ — conteúdo separado de código sempre que possível para facilitar atualizações futuras.
+- Site institucional multi-página em React + Vite, publicado no Vercel (https://lidernegra.vercel.app), com código no GitHub (nandakardoso/lidernegra). Navegação: Início, Nossa história (história, linha do tempo e impacto), O programa (jornada, comunidade e mentoras), Parcerias, FAQ, Próxima edição (/inscreva-se) e Área da Mentorada (apenas ponto de entrada, "Em breve").
+- Não há formulário nem backend. Os contatos reais são WhatsApp (+55 21 97146-4241), Instagram (@lidernegraoficial) e LinkedIn (company/lidernegra), centralizados em `src/data/contato.ts`.
+- **Inscrições fechadas no momento** (informado pelo usuário em 19/09/2026). Todas as chamadas para participar devem dizer isso; atualizar a FAQ e a página /inscreva-se quando o status mudar.
+- Seções sem conteúdo real ficam ocultas ou mostram uma mensagem honesta, sem placeholders visíveis: Nossos Apoiadores (`src/data/apoiadores.ts`, vazia), perfis de mentoras (`src/data/mentoras.ts`, vazia) e fotos das turmas na linha do tempo (espaço reservado).
+- Responsivo, acessível e com SEO: título e descrição por rota, `robots.txt`, `sitemap.xml`, imagem de compartilhamento, dados estruturados e redirecionamentos das rotas antigas (/impacto, /mentoras, /comunidade).
+- Conteúdo separado do código em `src/data/`. Estrutura: components/, pages/, sections/, assets/, data/.
+- Etapa 2 (futura): Área da Mentorada com login e "Minha Jornada". Não implementada.
 
 ## Brand Commitments
 
@@ -53,15 +55,17 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
 - Esta identidade real substitui qualquer direção visual genérica anterior — deve ser preservada e estendida ao site, não substituída.
 - Tom de voz: humano, acolhedor, potente, inspirador, inteligente, contemporâneo, direto. Evitar clichês de marketing genérico ("Transformando sonhos em realidade", "Juntas somos mais fortes", "Faça a diferença").
 - Identidade deve evitar aparência de ONG genérica, site corporativo tradicional, template pronto, estética infantil, excesso de rosa ou excesso de elementos decorativos.
-- Direção de fotografia: imagens reais (não estereotipadas) de mulheres negras em contextos profissionais, de mentoria, eventos, networking — diversidade de idades, estilos, corpos e trajetórias. Nenhuma imagem real disponível para uso no site no momento (usuário não forneceu assets fotográficos próprios); usar placeholders/composições gráficas claramente não-fotográficas quando necessário, sem fingir serem fotos reais de pessoas específicas.
+- Direção de fotografia: imagens reais (não estereotipadas) de mulheres negras em contextos profissionais, de mentoria, eventos e networking, com diversidade de idades, estilos e trajetórias. Já existem a foto da fundadora e uma foto de grupo; faltam fotos das turmas, das mentoras e de eventos. Sem material real e autorizado, não usar imagem genérica.
 
 ## Evidence on Hand
 
-Nenhum conteúdo real fornecido até o momento (confirmado pelo usuário): sem nomes de mentoras/fundadora, sem números de impacto, sem depoimentos reais, sem logo, sem links de redes sociais, sem patrocinadores. Todo o site deve ser construído com placeholders explícitos e editáveis, sem apresentar nada fictício como factual.
+Conteúdo real fornecido pelo usuário: a história completa do programa (origem em 2018, início em 2 de agosto de 2021, fundadora Vânia Neves, 6 edições), números oficiais (24 mulheres na primeira turma, 86% e 73% da primeira turma, mais de 750 inscritas na 6ª edição, quase 200 mulheres formadas), o logo, a foto da fundadora, uma foto de grupo, os contatos e a paleta oficial (vinho #722A38).
+
+Ainda não fornecido: critérios de elegibilidade e de seleção, custo ou gratuidade, duração total, como ser mentora, perfis das mentoras, depoimentos, lista de apoiadores, fotos das turmas e política de privacidade completa.
 
 ## Product Principles
 
-1. Nunca inventar dados institucionais (nomes, números, depoimentos, empresas) — usar placeholders claramente identificados sempre que a informação real não existir.
+1. Nunca inventar dados institucionais (nomes, números, depoimentos, empresas). Onde a informação real não existe, deixar a estrutura pronta e a seção oculta ou com uma mensagem honesta; nunca mostrar placeholders ao público.
 2. Equilibrar emoção + credibilidade + representatividade + profissionalismo + conversão em cada seção, evitando tanto o tom corporativo genérico quanto o excesso decorativo.
 3. Estruturar a navegação para que a visitante entenda rapidamente: o que é → por que existe → como funciona → quem participa → qual impacto gera → como fazer parte.
 4. Priorizar conteúdo e dados desacoplados do código (data/) para facilitar atualização futura por quem não é desenvolvedor.
