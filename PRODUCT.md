@@ -12,7 +12,7 @@ React + Vite + TypeScript + Tailwind CSS (confirmado pelo usuário).
 
 ## Users
 
-- **Mulheres negras** (o material oficial de história usa "mulheres negras"; validar se o público inclui "e pardas") interessadas em desenvolvimento profissional, liderança, carreira, empreendedorismo, networking, autoconhecimento, protagonismo e troca com outras mulheres. Público principal do site: potenciais inscritas na mentoria.
+- **Mulheres que se autodeclaram pretas ou pardas** (critério oficial de seleção) interessadas em desenvolvimento profissional, liderança, carreira, empreendedorismo, networking, autoconhecimento, protagonismo e troca com outras mulheres. Público principal do site: potenciais inscritas na mentoria.
 - **Mentoras**: mulheres profissionais que desejam compartilhar experiência e conhecimento, contribuindo para o desenvolvimento de outras mulheres.
 - **Empresas e organizações**: potenciais parceiras, patrocinadoras ou apoiadoras da iniciativa.
 - **Comunidade geral**: pessoas interessadas em conhecer e divulgar a iniciativa.
@@ -36,12 +36,12 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
   - Mais uma dimensão paralela e permanente, a **Comunidade LÍDERNEGRA**: Networking, Compartilhamento de oportunidades, Eventos e conteúdo, Apoio/conexão e aprendizado contínuo, Cursos de Instituições Apoiadoras.
 - Cada edição é dividida em etapas nomeadas (ex.: a etapa "CAPACITAÇÃO" observada no material real cobre os módulos 1-4 da jornada).
 - Formulário de inscrição deve estar preparado para futura integração com ferramentas externas (não especificado qual).
-- **Ainda não confirmado**: critérios de elegibilidade e seleção, custo, duração total, perfis das mentoras, depoimentos e apoiadores.
+- **Ainda não confirmado**: link do Regulamento, processo seletivo, custo, duração total, perfis das mentoras, depoimentos e apoiadores.
 
 ## Capabilities and Constraints
 
 - Site institucional multi-página em React + Vite, publicado no Vercel (https://lidernegra.vercel.app), com código no GitHub (nandakardoso/lidernegra). Navegação: Início, Nossa história (história, linha do tempo e impacto), O programa (jornada, comunidade e mentoras), Parcerias, FAQ, Próxima edição (/inscreva-se) e Área da Mentorada (apenas ponto de entrada, "Em breve").
-- Não há formulário nem backend. Os contatos reais são WhatsApp (+55 21 97146-4241), Instagram (@lidernegraoficial) e LinkedIn (company/lidernegra), centralizados em `src/data/contato.ts`.
+- Não há backend. A Área da Mentorada tem um formulário de login (Nome e Senha) sem autenticação real: ele avisa que o acesso não está ativo e não envia nem guarda dados. Ele dará acesso à aba de materiais, aulas e conteúdos (Etapa 2). Os contatos reais são e-mail (lidernegra.x@gmail.com), WhatsApp (+55 21 97146-4241), Instagram (@lidernegraoficial) e LinkedIn (company/lidernegra), centralizados em `src/data/contato.ts`.
 - **Inscrições fechadas no momento** (informado pelo usuário em 19/09/2026). Todas as chamadas para participar devem dizer isso; atualizar a FAQ e a página /inscreva-se quando o status mudar.
 - Seções sem conteúdo real ficam ocultas ou mostram uma mensagem honesta, sem placeholders visíveis: Nossos Apoiadores (`src/data/apoiadores.ts`, vazia), perfis de mentoras (`src/data/mentoras.ts`, vazia) e fotos das turmas na linha do tempo (espaço reservado).
 - Responsivo, acessível e com SEO: título e descrição por rota, `robots.txt`, `sitemap.xml`, imagem de compartilhamento, dados estruturados e redirecionamentos das rotas antigas (/impacto, /mentoras, /comunidade).
@@ -61,7 +61,7 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
 
 Conteúdo real fornecido pelo usuário: a história completa do programa (origem em 2018, início em 2 de agosto de 2021, fundadora Vânia Neves, 6 edições), números oficiais (24 mulheres na primeira turma, 86% e 73% da primeira turma, mais de 750 inscritas na 6ª edição, quase 200 mulheres formadas), o logo, a foto da fundadora, uma foto de grupo, os contatos e a paleta oficial (vinho #722A38).
 
-Ainda não fornecido: critérios de elegibilidade e de seleção, custo ou gratuidade, duração total, como ser mentora, perfis das mentoras, depoimentos, lista de apoiadores, fotos das turmas e política de privacidade completa.
+Critérios de seleção fornecidos (nível superior, 4 anos de experiência corporativa, aspiração de liderança, sem outra mentoria nos últimos 6 meses, disponibilidade, autodeclaração preta ou parda, qualquer região com internet). Ainda não fornecido: link do Regulamento, processo seletivo, custo ou gratuidade, duração total, como ser mentora, perfis das mentoras, depoimentos, lista de apoiadores, fotos das turmas e política de privacidade completa.
 
 ## Product Principles
 

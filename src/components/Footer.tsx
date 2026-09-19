@@ -32,6 +32,11 @@ export function Footer() {
                 <a className="flex min-h-11 items-center hover:text-gold-400" href="https://www.linkedin.com/company/lidernegra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </li>
               <li>
+                <a className="flex min-h-11 items-center hover:text-gold-400" href="mailto:lidernegra.x@gmail.com">
+                  lidernegra.x@gmail.com
+                </a>
+              </li>
+              <li>
                 <a
                   className="flex min-h-11 items-center hover:text-gold-400"
                   href="https://wa.me/5521971464241"
