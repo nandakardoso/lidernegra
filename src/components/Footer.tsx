@@ -34,8 +34,13 @@ export function Footer() {
                 <a className="hover:text-gold-400" href="[INSERIR LINK DO LINKEDIN]">LinkedIn</a>
               </li>
               <li>
-                <a className="hover:text-gold-400" href="mailto:[INSERIR E-MAIL DE CONTATO]">
-                  [INSERIR E-MAIL DE CONTATO]
+                <a
+                  className="hover:text-gold-400"
+                  href="https://wa.me/5521971464241"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp: +55 21 97146-4241
                 </a>
               </li>
             </ul>
