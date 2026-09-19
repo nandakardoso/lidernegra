@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paleta real da marca LÍDERNEGRA, extraída do material oficial de apresentação */
-  --color-wine-950: #2c0a17;
-  --color-wine-900: #3d0f1f;
-  --color-wine-800: #4a1428;
-  --color-wine-700: #5c1a32;
-  --color-wine-600: #74233f;
+  /* Vinho oficial da marca: #722A38 (logo) */
+  --color-wine-950: #722a38;
+  --color-wine-900: #722a38;
+  --color-wine-800: #5f2230;
+  --color-wine-700: #4d1b27;
+  --color-wine-600: #8a3446;
 
   --color-gold-400: #e0bd6a;
   --color-gold-500: #c9a227;

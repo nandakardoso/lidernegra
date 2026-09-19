@@ -28,7 +28,7 @@ export function Footer() {
             <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-gold-400">Conecte-se</h2>
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <a className="hover:text-gold-400" href="[INSERIR LINK DO INSTAGRAM]">Instagram</a>
+                <a className="hover:text-gold-400" href="https://www.instagram.com/lidernegraoficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
               </li>
               <li>
                 <a className="hover:text-gold-400" href="[INSERIR LINK DO LINKEDIN]">LinkedIn</a>
