@@ -3,6 +3,7 @@ import { Origem } from "../sections/Origem";
 import { OQueE } from "../sections/OQueE";
 import { Jornada } from "../sections/Jornada";
 import { Impacto } from "../sections/Impacto";
+import { Apoiadores } from "../sections/Apoiadores";
 import { Comunidade } from "../sections/Comunidade";
 import { Convite } from "../sections/Convite";
 
@@ -14,6 +15,7 @@ export function Home() {
       <OQueE />
       <Jornada resumo />
       <Impacto comLink />
+      <Apoiadores />
       <Comunidade comLink />
       <Convite />
     </>
