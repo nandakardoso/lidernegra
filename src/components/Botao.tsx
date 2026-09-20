@@ -5,7 +5,7 @@ type Tom = "sobreEscuro" | "sobreClaro";
 type Tamanho = "padrao" | "compacto";
 
 const tons: Record<Tom, string> = {
-  sobreEscuro: "bg-gold-400 text-wine-950 hover:bg-gold-500 focus-visible:outline-cream-50",
+  sobreEscuro: "bg-gold-400 text-wine-900 hover:bg-gold-500 focus-visible:outline-cream-50",
   sobreClaro: "bg-wine-900 text-cream-50 hover:bg-wine-800 focus-visible:outline-wine-900",
 };
 

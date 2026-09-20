@@ -30,4 +30,4 @@ export const processoSelecao: string[] = [
 ];
 
 export const notaProcesso =
-  "Este resumo segue o processo da 5ª edição. O regulamento de cada edição pode trazer mudanças, e é ele que vale.";
+  "Este resumo segue o processo da 5ª edição. Em cada edição, prevalece o regulamento.";

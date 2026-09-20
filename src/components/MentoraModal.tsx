@@ -22,7 +22,7 @@ export function MentoraModal({ mentora, onClose }: MentoraModalProps) {
   if (!mentora) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-wine-950/70 p-6" onClick={onClose}>
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-wine-900/70 p-6" onClick={onClose}>
       <div
         role="dialog"
         aria-modal="true"

@@ -2,11 +2,8 @@
 
 @theme {
   /* Vinho oficial da marca: #722A38 (logo) */
-  --color-wine-950: #722a38;
   --color-wine-900: #722a38;
   --color-wine-800: #5f2230;
-  --color-wine-700: #4d1b27;
-  --color-wine-600: #8a3446;
 
   --color-gold-400: #e0bd6a;
   --color-gold-500: #c9a227;
@@ -14,7 +11,6 @@
 
   --color-cream-50: #fbf7f0;
   --color-cream-100: #f7f1e6;
-  --color-cream-200: #efe4d2;
 
   --color-ink-900: #211012;
   --color-ink-700: #3a2226;
@@ -34,7 +30,7 @@
 }
 
 * {
-  scrollbar-color: var(--color-wine-700) var(--color-cream-100);
+  scrollbar-color: var(--color-wine-800) var(--color-cream-100);
 }
 
 body {
@@ -48,7 +44,7 @@ body {
 
 ::selection {
   background-color: var(--color-gold-500);
-  color: var(--color-wine-950);
+  color: var(--color-wine-900);
 }
 
 :focus-visible {

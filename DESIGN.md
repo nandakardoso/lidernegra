@@ -4,14 +4,11 @@ description: Site institucional do Programa de Mentoria LÍDERNEGRA, uma rede de
 colors:
   vinho-oficial: "#722a38"
   vinho-hover: "#5f2230"
-  vinho-fundo: "#4d1b27"
-  vinho-claro: "#8a3446"
   dourado-luz: "#e0bd6a"
   dourado: "#c9a227"
   dourado-texto: "#86650f"
   creme: "#fbf7f0"
   creme-suave: "#f7f1e6"
-  creme-profundo: "#efe4d2"
   tinta: "#211012"
   tinta-texto: "#3a2226"
   tinta-suave: "#6b4b50"
@@ -90,8 +87,7 @@ Vinho e creme sustentam a leitura; o dourado pontua. O vinho é a cor do logo do
 
 ### Primary
 - **Vinho LÍDERNEGRA** (#722a38): a cor oficial da marca. Fundo do Hero, do bloco de Impacto, do rodapé e da linha do tempo; cor de títulos e do botão principal sobre fundo claro.
-- **Vinho de interação** (#5f2230): hover do botão principal e numeração circular da jornada.
-- **Vinho profundo** (#4d1b27) e **Vinho vivo** (#8a3446): variações de apoio, como a barra de rolagem.
+- **Vinho de interação** (#5f2230): hover do botão principal, numeração circular da jornada e barra de rolagem.
 
 ### Secondary
 - **Dourado luz** (#e0bd6a): kickers, numerais grandes e o botão principal sobre fundo vinho.
@@ -100,7 +96,7 @@ Vinho e creme sustentam a leitura; o dourado pontua. O vinho é a cor do logo do
 
 ### Neutral
 - **Creme** (#fbf7f0): fundo padrão das páginas.
-- **Creme suave** (#f7f1e6) e **Creme profundo** (#efe4d2): faixas de respiro entre seções e o bloco de fechamento.
+- **Creme suave** (#f7f1e6): faixas de respiro entre seções e o Impacto em Nossa história.
 - **Tinta** (#211012), **Tinta de texto** (#3a2226) e **Tinta suave** (#6b4b50): texto corrido sobre creme, do mais forte ao mais discreto.
 
 ### Named Rules
@@ -110,8 +106,8 @@ Vinho e creme sustentam a leitura; o dourado pontua. O vinho é a cor do logo do
 
 ## Typography
 
-**Display Font:** Playfair Display (com Iowan Old Style, Georgia)
-**Body Font:** Work Sans (com Helvetica Neue, Arial)
+**Display Font:** Playfair Display, pesos 400 normal e 400 itálico (com Iowan Old Style, Georgia)
+**Body Font:** Work Sans, pesos 400, 500 e 600 (com Helvetica Neue, Arial)
 
 **Character:** uma serifa editorial em itálico, com autoridade e calor, sobre uma sans humanista legível. O par lembra uma publicação, não um site corporativo.
 
@@ -127,9 +123,9 @@ Vinho e creme sustentam a leitura; o dourado pontua. O vinho é a cor do logo do
 
 ## Layout
 
-Coluna de leitura estreita (até 3xl a 5xl) dentro de contêineres de até 6xl a 7xl, com margem lateral de 24px no celular e 40px a partir de md. Seções separadas por 96px verticais. A ordem da Home segue o funil: por que existe, o programa, o impacto, a comunidade e o convite.
+Um único contêiner de seção (`max-w-6xl`, 1152px) com margem lateral de 24px no celular e 40px a partir de md: todos os títulos começam na mesma margem esquerda. Textos corridos usam colunas de leitura estreitas (`max-w-3xl`) alinhadas à esquerda desse mesmo contêiner. Respiro vertical de seção: 64px no celular e 96px no desktop (`py-16 md:py-24`); faixas de apoio usam 48px.
 
-O menu completo aparece a partir de 1024px; abaixo disso vira um menu recolhível. Blocos longos usam divulgação progressiva: a linha do tempo da história abre por clique, e a Jornada da Home aparece resumida, com os módulos na página O programa. Alvos de toque têm pelo menos 44px de altura no celular.
+O menu tem 3 links e um botão; a partir de 1024px aparece completo, e abaixo disso vira um menu recolhível. Blocos longos usam divulgação progressiva: a linha do tempo da história abre por clique, e a Jornada da Home aparece resumida, com os módulos na página O programa. Alvos de toque têm pelo menos 44px de altura no celular.
 
 ## Elevation & Depth
 

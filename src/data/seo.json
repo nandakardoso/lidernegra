@@ -1,0 +1,40 @@
+{
+  "site": "https://lidernegra.vercel.app",
+  "marca": "LÍDERNEGRA",
+  "rotas": {
+    "/": {
+      "titulo": "LÍDERNEGRA | Mentoria e liderança para mulheres negras",
+      "descricao": "Programa de mentoria sem fins lucrativos, criado em 2021, para mulheres negras (pretas e pardas) ocuparem posições de liderança."
+    },
+    "/historia": {
+      "titulo": "Nossa história | LÍDERNEGRA",
+      "descricao": "Como uma pergunta feita no Vale do Silício, em 2018, virou o LÍDERNEGRA: da primeira turma, em 2021, à 6ª edição, em 2026."
+    },
+    "/programa": {
+      "titulo": "O programa | LÍDERNEGRA",
+      "descricao": "A jornada do LÍDERNEGRA em cinco etapas e a comunidade que continua depois da mentoria."
+    },
+    "/participar": {
+      "titulo": "Como participar | LÍDERNEGRA",
+      "descricao": "Pré-requisitos, processo de seleção e canais de contato do LÍDERNEGRA. As inscrições estão fechadas no momento."
+    },
+    "/faq": {
+      "titulo": "Perguntas frequentes | LÍDERNEGRA",
+      "descricao": "Respostas sobre o LÍDERNEGRA: quem pode participar, quem são as mentoras e como apoiar o programa."
+    },
+    "/area-da-mentorada": {
+      "titulo": "Área da Mentorada | LÍDERNEGRA",
+      "descricao": "Espaço das mentoradas do LÍDERNEGRA para materiais, aulas e conteúdos. Em breve.",
+      "indexar": false
+    },
+    "/privacidade": {
+      "titulo": "Política de Privacidade | LÍDERNEGRA",
+      "descricao": "Informações de privacidade do site do LÍDERNEGRA.",
+      "indexar": false
+    }
+  },
+  "naoEncontrada": {
+    "titulo": "Página não encontrada | LÍDERNEGRA",
+    "descricao": "A página procurada não existe."
+  }
+}

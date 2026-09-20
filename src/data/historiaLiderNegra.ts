@@ -18,6 +18,10 @@ export const origemHistoria: string[] = [
   "Entre cerca de 100 executivos participantes, havia apenas duas mulheres negras.",
 ];
 
+/** Versão curta da origem, usada na Home. O texto completo fica em Nossa história. */
+export const origemResumo =
+  "Em 2018, numa experiência executiva de inovação no Vale do Silício, Vânia Neves reparou que, entre cerca de 100 executivos participantes, havia apenas duas mulheres negras.";
+
 export const perguntaOrigem =
   "Como falar sobre o futuro, inovação e transformação sem que a diversidade esteja presente nos espaços onde esse futuro está sendo construído?";
 
@@ -33,7 +37,7 @@ export const capitulosHistoria: CapituloHistoria[] = [
     titulo: "O começo",
     numero: "24",
     numeroLegenda: "mulheres na primeira edição",
-    frase: "Orienta. Empodera. Transforma.",
+    frase: "Uma proposta construída de forma coletiva por profissionais voluntários, mentoras e palestrantes.",
     paragrafos: [
       "Em 2 de agosto de 2021, o sonho se tornou realidade.",
       "Nascia o Programa de Mentoria LÍDERNEGRA, uma iniciativa sem fins lucrativos criada para apoiar o desenvolvimento de mulheres negras que desejam crescer profissionalmente e ocupar posições de liderança.",

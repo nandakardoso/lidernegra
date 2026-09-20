@@ -3,7 +3,6 @@ import { Origem } from "../sections/Origem";
 import { Jornada } from "../sections/Jornada";
 import { Impacto } from "../sections/Impacto";
 import { Apoiadores } from "../sections/Apoiadores";
-import { Comunidade } from "../sections/Comunidade";
 import { Convite } from "../sections/Convite";
 
 export function Home() {
@@ -12,9 +11,8 @@ export function Home() {
       <Hero />
       <Origem />
       <Jornada resumo />
-      <Impacto comLink />
+      <Impacto comLink resumo />
       <Apoiadores />
-      <Comunidade comLink />
       <Convite />
     </>
   );

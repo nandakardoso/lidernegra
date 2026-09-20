@@ -1,32 +1,37 @@
-# React + TypeScript + Vite
+# Site do LÍDERNEGRA
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site institucional do Programa de Mentoria LÍDERNEGRA. React + Vite + TypeScript + Tailwind CSS, publicado no Vercel.
 
-Currently, two official plugins are available:
+## Como rodar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev      # desenvolvimento em http://localhost:5173
+npm run build    # tsc + vite build + pré-renderização do <head> de cada página
+npm run lint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Onde editar o conteúdo
+
+O conteúdo fica separado do código, em `src/data/`. Preencha só com informação confirmada pelo LÍDERNEGRA.
+
+| Arquivo | O que controla |
+|---|---|
+| `contato.ts` | WhatsApp, e-mail, Instagram e LinkedIn |
+| `historiaLiderNegra.ts` | História, linha do tempo e foto de "Uma jornada que continua" |
+| `impacto.ts` | Números de impacto e palavras da 6ª edição |
+| `jornada.ts` | As 5 etapas da jornada e a comunidade |
+| `prerequisitos.ts` | Benefícios, pré-requisitos e processo de seleção |
+| `faq.ts` | Perguntas frequentes |
+| `mentoras.ts` | Perfis das mentoras (a seção só aparece com dados) |
+| `apoiadores.ts` | Apoiadores e logos (a seção só aparece com dados) |
+| `seo.json` | Título, descrição e indexação de cada página |
+
+## Páginas
+
+`/` · `/historia` · `/programa` · `/participar` · `/faq` · `/area-da-mentorada` · `/privacidade`.
+As URLs antigas (`/sobre`, `/mentoria`, `/inscreva-se`, `/impacto`, `/comunidade`, `/mentoras`, `/parcerias`) redirecionam pelo `vercel.json`.
+
+## Design
+
+Veja `DESIGN.md` (sistema visual) e `PRODUCT.md` (produto e conteúdo). Componentes compartilhados em `src/components/`.

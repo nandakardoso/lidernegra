@@ -5,9 +5,8 @@ import logo from "../assets/logo-lidernegra-vinho.png";
 
 const navItems = [
   { to: "/", label: "Início" },
-  { to: "/sobre", label: "Nossa história" },
-  { to: "/mentoria", label: "O programa" },
-  { to: "/parcerias", label: "Parcerias" },
+  { to: "/historia", label: "Nossa história" },
+  { to: "/programa", label: "O programa" },
   { to: "/faq", label: "FAQ" },
 ];
 
@@ -48,11 +47,8 @@ export function Header() {
               {item.label}
             </NavLink>
           ))}
-          <Link to="/area-da-mentorada" className="whitespace-nowrap font-sans text-sm font-medium text-wine-800 underline decoration-gold-500 decoration-2 underline-offset-8">
-            Área da Mentorada
-          </Link>
-          <Botao to="/inscreva-se" tamanho="compacto">
-            Próxima edição
+          <Botao to="/participar" tamanho="compacto">
+            Como participar
           </Botao>
         </nav>
 
@@ -96,18 +92,9 @@ export function Header() {
               </NavLink>
             </li>
           ))}
-          <li>
-            <NavLink
-              to="/area-da-mentorada"
-              onClick={() => setOpen(false)}
-              className="block rounded-lg px-3 py-3 font-sans text-base font-medium text-wine-800"
-            >
-              Área da Mentorada
-            </NavLink>
-          </li>
           <li className="pt-2">
-            <Botao to="/inscreva-se" bloco onClick={() => setOpen(false)}>
-              Próxima edição
+            <Botao to="/participar" bloco onClick={() => setOpen(false)}>
+              Como participar
             </Botao>
           </li>
         </ul>

@@ -1,13 +1,12 @@
 import { indicadoresImpacto, palavrasSextaEdicao } from "../data/impacto";
 import { Titulo } from "../components/Titulo";
 import { TextLink } from "../components/TextLink";
-import { Kicker } from "../components/Kicker";
 
 type Tom = "escuro" | "claro";
 
 const estilos = {
   escuro: {
-    secao: "bg-wine-950 text-cream-50",
+    secao: "bg-wine-900 text-cream-50",
     tomMarca: "sobreEscuro",
     filete: "border-gold-500/40",
     numero: "text-gold-400",
@@ -32,21 +31,23 @@ interface ImpactoProps {
   tom?: Tom;
   /** Mostra as palavras que as participantes da 6ª edição escolheram, abaixo dos números. */
   palavras?: boolean;
+  /** Mostra só os três números principais, sem a nota dos percentuais (usado na Home). */
+  resumo?: boolean;
 }
 
-export function Impacto({ comLink = false, tom = "escuro", palavras = false }: ImpactoProps) {
+export function Impacto({ comLink = false, tom = "escuro", palavras = false, resumo = false }: ImpactoProps) {
   const e = estilos[tom];
+  const indicadores = resumo ? indicadoresImpacto.slice(0, 3) : indicadoresImpacto;
 
   return (
-    <section id="impacto" className={`scroll-mt-20 py-20 md:py-24 ${e.secao}`}>
+    <section id="impacto" className={`scroll-mt-20 py-16 md:py-24 ${e.secao}`}>
       <div className="mx-auto max-w-6xl px-6 md:px-10">
-        <Kicker tom={e.tomMarca}>Impacto</Kicker>
-        <Titulo tom={e.tomMarca} tamanho="secundario" className="mt-4">
+        <Titulo tom={e.tomMarca} tamanho="secundario">
           O que a rede já construiu
         </Titulo>
 
-        <dl className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
-          {indicadoresImpacto.map((item) => (
+        <dl className={`mt-12 grid gap-10 sm:grid-cols-2 ${resumo ? "lg:grid-cols-3" : "lg:grid-cols-5"}`}>
+          {indicadores.map((item) => (
             <div key={item.label} className={`flex flex-col border-t pt-5 ${e.filete}`}>
               <dt className={`order-2 mt-3 font-sans text-sm leading-snug ${e.rotulo}`}>{item.label}</dt>
               <dd className={`order-1 font-display text-4xl italic ${e.numero}`}>{item.valor}</dd>
@@ -54,10 +55,12 @@ export function Impacto({ comLink = false, tom = "escuro", palavras = false }: I
           ))}
         </dl>
 
-        <p className={`mt-10 max-w-2xl font-sans text-sm ${e.nota}`}>
-          Dados informados pelo LÍDERNEGRA. Os percentuais de 86% e 73% se referem às participantes da primeira
-          turma.
-        </p>
+        {!resumo && (
+          <p className={`mt-10 max-w-2xl font-sans text-sm ${e.nota}`}>
+            Dados informados pelo LÍDERNEGRA. Os percentuais de 86% e 73% se referem às participantes da primeira
+            turma.
+          </p>
+        )}
 
         {palavras && (
           <div className={`mt-16 border-t pt-10 ${e.filete}`}>
@@ -79,8 +82,8 @@ export function Impacto({ comLink = false, tom = "escuro", palavras = false }: I
         )}
 
         {comLink && (
-          <div className="mt-8">
-            <TextLink to="/sobre#impacto" tone="onDark">
+          <div className="mt-6">
+            <TextLink to="/historia#impacto" tone="onDark">
               Ver mais sobre o impacto
             </TextLink>
           </div>

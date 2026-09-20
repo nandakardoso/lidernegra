@@ -1,3 +1,40 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/sobre",
+      "destination": "/historia",
+      "permanent": true
+    },
+    {
+      "source": "/mentoria",
+      "destination": "/programa",
+      "permanent": true
+    },
+    {
+      "source": "/inscreva-se",
+      "destination": "/participar",
+      "permanent": true
+    },
+    {
+      "source": "/impacto",
+      "destination": "/historia#impacto",
+      "permanent": true
+    },
+    {
+      "source": "/comunidade",
+      "destination": "/programa#comunidade",
+      "permanent": true
+    },
+    {
+      "source": "/mentoras",
+      "destination": "/programa",
+      "permanent": true
+    },
+    {
+      "source": "/parcerias",
+      "destination": "/faq",
+      "permanent": true
+    }
+  ]
 }

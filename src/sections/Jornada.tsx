@@ -5,13 +5,13 @@ import { Titulo } from "../components/Titulo";
 
 export function Jornada({ resumo = false }: { resumo?: boolean }) {
   return (
-    <section id="jornada" className="scroll-mt-20 bg-cream-100 py-24">
-      <div className="mx-auto max-w-5xl px-6 md:px-10">
+    <section id="jornada" className="scroll-mt-20 bg-cream-100 py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-6 md:px-10">
         <Titulo>A Jornada LÍDERNEGRA</Titulo>
         <p className="mt-4 max-w-2xl font-sans text-lg leading-relaxed text-ink-700">
-          O programa combina capacitação, mentoria com executivas experientes e o curso Fundamentos do
-          Pensamento Exponencial, da SingularityU Brazil. Cinco etapas conduzem cada mentorada, da identidade de
-          liderança à ação.
+          {resumo
+            ? "O programa combina capacitação, mentoria com executivas experientes e o curso Fundamentos do Pensamento Exponencial, da SingularityU Brazil. Cinco etapas conduzem cada mentorada, da identidade de liderança à ação."
+            : "Cinco etapas, cada uma com seus módulos. A última reúne a mentoria e o plano de desenvolvimento individual."}
         </p>
 
         <ol className="mt-14 space-y-10">
@@ -37,7 +37,7 @@ export function Jornada({ resumo = false }: { resumo?: boolean }) {
         </ol>
         {resumo && (
           <div className="mt-12">
-            <TextLink to="/mentoria#jornada">Ver os módulos de cada etapa</TextLink>
+            <TextLink to="/programa#jornada">Ver os módulos de cada etapa</TextLink>
           </div>
         )}
       </div>

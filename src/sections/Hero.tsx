@@ -4,10 +4,10 @@ import { TextLink } from "../components/TextLink";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-wine-950 text-cream-50">
+    <section className="relative overflow-hidden bg-wine-900 text-cream-50">
       <GoldArcMotif className="pointer-events-none absolute -top-10 right-0 h-[420px] w-[420px] md:h-[560px] md:w-[560px]" />
 
-      <div className="relative mx-auto flex min-h-[80vh] max-w-7xl flex-col justify-center px-6 py-20 md:px-10 md:py-24">
+      <div className="relative mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-6 py-20 md:px-10 md:py-24">
         <p className="font-sans text-xs font-semibold uppercase tracking-kicker text-gold-400 md:text-sm">
           Programa de Mentoria LÍDERNEGRA
         </p>
@@ -17,15 +17,14 @@ export function Hero() {
         </h1>
 
         <p className="mt-8 max-w-xl font-sans text-base leading-relaxed text-cream-100/90 md:text-lg">
-          Iniciativa sem fins lucrativos criada em 2021 por Vânia Neves e sustentada por profissionais
-          voluntárias. Em 2026, mais de 750 mulheres se inscreveram na 6ª edição.
+          Programa sem fins lucrativos, criado em 2021 por Vânia Neves, para mulheres negras (pretas e pardas). Em 2026, mais de 750 se inscreveram na 6ª edição.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-4">
-          <Botao to="/inscreva-se" tom="sobreEscuro">
-            Acompanhar a próxima edição
+          <Botao to="/participar" tom="sobreEscuro">
+            Como participar
           </Botao>
-          <TextLink to="/sobre" tone="onDark">
+          <TextLink to="/historia" tone="onDark">
             Nossa história
           </TextLink>
         </div>

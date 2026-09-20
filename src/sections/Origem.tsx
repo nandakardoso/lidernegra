@@ -1,11 +1,11 @@
 import vania from "../assets/vania-neves.jpg";
 import { TextLink } from "../components/TextLink";
-import { origemHistoria, perguntaOrigem } from "../data/historiaLiderNegra";
+import { origemResumo, perguntaOrigem } from "../data/historiaLiderNegra";
 import { Titulo } from "../components/Titulo";
 
 export function Origem() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
+    <section className="mx-auto max-w-6xl px-6 py-16 md:py-24 md:px-10">
       <div className="grid items-center gap-12 md:grid-cols-[minmax(0,1fr)_20rem] lg:grid-cols-[minmax(0,1fr)_24rem]">
         <div>
           <Titulo>
@@ -13,9 +13,7 @@ export function Origem() {
           </Titulo>
 
           <div className="mt-8 max-w-2xl space-y-5 font-sans text-lg leading-relaxed text-ink-700">
-            {origemHistoria.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
+            <p>{origemResumo}</p>
             <p className="border-l-2 border-gold-500 pl-6 font-display text-xl italic text-wine-900">
               {perguntaOrigem}
             </p>
@@ -23,7 +21,7 @@ export function Origem() {
           </div>
 
           <div className="mt-10">
-            <TextLink to="/sobre">Ler a história completa</TextLink>
+            <TextLink to="/historia">Ler a história completa</TextLink>
           </div>
         </div>
 

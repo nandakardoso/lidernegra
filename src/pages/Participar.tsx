@@ -19,14 +19,14 @@ const canais: { canal: Canal; nome: string; detalhe?: string; acao: string; href
   { canal: "linkedin", nome: "LinkedIn", acao: "Acompanhar no LinkedIn", href: contato.linkedin, externo: true },
 ];
 
-export function Inscricao() {
+export function Participar() {
   return (
     <>
-      <PageHero kicker="Próxima edição" titulo="As inscrições estão fechadas no momento">
-        Veja quem pode participar e como saber quando a próxima edição abre.
+      <PageHero titulo="Como participar">
+        As inscrições estão fechadas no momento. Veja quem pode participar e como saber quando a próxima edição abre.
       </PageHero>
 
-      <section className="mx-auto max-w-3xl px-6 pt-24 md:px-10">
+      <section className="mx-auto max-w-6xl [&>*]:max-w-3xl px-6 pt-16 md:px-10 md:pt-24">
         <Titulo tamanho="secundario">Por que participar?</Titulo>
         <ul className="mt-8 space-y-4">
           {beneficios.map((item) => (
@@ -35,7 +35,7 @@ export function Inscricao() {
         </ul>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 pt-24 md:px-10">
+      <section className="mx-auto max-w-6xl [&>*]:max-w-3xl px-6 pt-16 md:px-10 md:pt-24">
         <Titulo tamanho="secundario">Pré-requisitos</Titulo>
         <p className="mt-4 font-sans text-lg leading-relaxed text-ink-700">{publicoPrograma}</p>
         <ul className="mt-8 space-y-4">
@@ -46,7 +46,7 @@ export function Inscricao() {
         <p className="mt-8 font-sans text-base leading-relaxed text-ink-700">{notaLocalizacao}</p>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 pt-24 md:px-10">
+      <section className="mx-auto max-w-6xl [&>*]:max-w-3xl px-6 pt-16 md:px-10 md:pt-24">
         <Titulo tamanho="secundario">Como funciona a seleção</Titulo>
         <ol className="mt-8 space-y-4">
           {processoSelecao.map((item) => (
@@ -56,7 +56,7 @@ export function Inscricao() {
         <p className="mt-8 font-sans text-sm leading-relaxed text-ink-500">{notaProcesso}</p>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-24 md:px-10">
+      <section className="mx-auto max-w-6xl [&>*]:max-w-3xl px-6 py-16 md:px-10 md:py-24">
         <Titulo tamanho="secundario">Como saber quando abrir</Titulo>
         <p className="mt-4 font-sans text-lg leading-relaxed text-ink-700">
           As inscrições abrem a cada edição. Na 6ª edição, em 2026, mais de 750 mulheres se inscreveram. Os

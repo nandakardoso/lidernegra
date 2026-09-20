@@ -4,39 +4,29 @@ export interface FaqItem {
 }
 
 /**
- * Somente perguntas com resposta confirmada. Atualize "As inscrições estão abertas?" quando o status mudar. Ainda faltam respostas oficiais para:
- * processo seletivo, custo, duração total, como ser mentora e participação em mais de uma edição.
+ * Somente perguntas com resposta confirmada. Atualize "As inscrições estão abertas?" quando o status mudar.
+ * Ainda faltam respostas oficiais para: custo, duração total e como ser mentora.
  */
 export const faqItems: FaqItem[] = [
   {
     pergunta: "O que é o LÍDERNEGRA?",
     resposta:
-      "É um programa de mentoria sem fins lucrativos, criado em 2021, que apoia o desenvolvimento de mulheres negras que desejam crescer profissionalmente e ocupar posições de liderança. Combina capacitação, mentoria com executivas experientes e pensamento exponencial.",
+      "Um programa de mentoria sem fins lucrativos, criado em 2021, para mulheres negras (pretas e pardas) que desejam crescer profissionalmente e ocupar posições de liderança. Combina capacitação, mentoria com executivas experientes e pensamento exponencial.",
   },
   {
     pergunta: "Quem criou o programa?",
     resposta:
-      "A executiva Vânia Neves. Em 2018, em uma experiência de inovação no Vale do Silício, ela percebeu que, entre cerca de 100 executivos, havia apenas duas mulheres negras. Esse incômodo virou o programa, que começou em 2 de agosto de 2021.",
+      "A executiva Vânia Neves. Em 2018, em uma experiência de inovação no Vale do Silício, ela reparou que, entre cerca de 100 executivos, havia apenas duas mulheres negras. Esse incômodo virou o programa, que começou em 2 de agosto de 2021.",
   },
   {
     pergunta: "As inscrições estão abertas?",
     resposta:
-      "No momento, as inscrições estão fechadas. Acompanhe o Instagram @lidernegraoficial e o LinkedIn do LÍDERNEGRA, ou fale com a equipe pelo WhatsApp, para saber quando a próxima edição abre.",
+      "No momento, estão fechadas. Acompanhe o Instagram @lidernegraoficial e o LinkedIn do LÍDERNEGRA, ou fale com a equipe pelo WhatsApp, para saber quando a próxima edição abre.",
   },
   {
     pergunta: "Quem pode participar?",
     resposta:
-      "Mulheres que se autodeclararem pretas ou pardas e que tenham nível superior completo, no mínimo 4 anos de experiência no ambiente corporativo e a aspiração de alcançar uma posição de liderança ou potencializar seu perfil como líder. Veja todos os pré-requisitos na página Próxima edição.",
-  },
-  {
-    pergunta: "Preciso morar em alguma cidade específica?",
-    resposta:
-      "Não. As candidatas podem residir em qualquer região do país, desde que tenham acesso à internet para participar online do programa.",
-  },
-  {
-    pergunta: "Fiz outro programa de mentoria. Posso participar?",
-    resposta:
-      "É preciso não ter participado, nos últimos 6 meses, de outro programa de mentoria com propósito similar ao do LÍDERNEGRA.",
+      "Mulheres que se autodeclaram pretas ou pardas, com nível superior completo, no mínimo 4 anos de experiência no ambiente corporativo e aspiração de alcançar uma posição de liderança ou potencializar seu perfil como líder. Podem morar em qualquer região do país, com acesso à internet, e não ter feito outro programa de mentoria similar nos últimos 6 meses. Todos os critérios estão em Como participar.",
   },
   {
     pergunta: "Quem são as mentoras?",
@@ -46,16 +36,11 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: "O que a jornada inclui?",
     resposta:
-      "Cinco etapas: Eu como Líder, Liderança e Influência, Pensamento Estratégico e Inovação, Gestão para Geração de Valor e Liderança em Ação. Também há a Comunidade LÍDERNEGRA, que segue ativa depois da mentoria.",
+      "Cinco etapas: Eu como Líder, Liderança e Influência, Pensamento Estratégico e Inovação, Gestão para Geração de Valor e Liderança em Ação. Depois da mentoria, a Comunidade LÍDERNEGRA continua ativa.",
   },
   {
-    pergunta: "Como minha empresa pode apoiar?",
+    pergunta: "Como minha organização pode apoiar?",
     resposta:
-      "Empresas podem contribuir como patrocinadoras, parceiras institucionais, com cursos pela Comunidade LÍDERNEGRA ou apoiando eventos. Fale com a equipe pelo WhatsApp.",
-  },
-  {
-    pergunta: "Onde acompanho as próximas inscrições?",
-    resposta:
-      "No Instagram @lidernegraoficial e no LinkedIn do LÍDERNEGRA. Você também pode falar com a equipe pelo WhatsApp.",
+      "Com patrocínio, parceria institucional, apoio a eventos, voluntariado, produção de conteúdo ou cursos pela Comunidade LÍDERNEGRA. Fale com a equipe pelo WhatsApp ou pelo e-mail lidernegra.x@gmail.com.",
   },
 ];

@@ -39,11 +39,11 @@ export function AreaMentorada() {
 
   return (
     <>
-      <PageHero kicker="Área da Mentorada" titulo="Acesso das mentoradas">
+      <PageHero titulo="Área da Mentorada">
         O login dará acesso à aba de materiais, aulas e conteúdos do programa.
       </PageHero>
 
-      <section className="mx-auto max-w-5xl px-6 py-20 md:px-10 md:py-24">
+      <section className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
         <div className="grid items-start gap-14 md:grid-cols-[minmax(0,26rem)_1fr] md:gap-20">
           <div className="bg-cream-100 p-8 md:p-10">
             <Titulo tamanho="secundario">Entrar</Titulo>
@@ -99,7 +99,7 @@ export function AreaMentorada() {
               ))}
             </ul>
             <div className="mt-8">
-              <TextLink to="/inscreva-se">Ver canais de contato</TextLink>
+              <TextLink to="/participar">Como participar</TextLink>
             </div>
           </div>
         </div>

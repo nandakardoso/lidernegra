@@ -4,7 +4,7 @@ import { Titulo } from "../components/Titulo";
 
 export function Comunidade({ comLink = false }: { comLink?: boolean }) {
   return (
-    <section id="comunidade" className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24 md:px-10">
+    <section id="comunidade" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-16 md:py-24 md:px-10">
       <Titulo>
         Uma mentoria termina. Uma rede permanece.
       </Titulo>
@@ -27,7 +27,7 @@ export function Comunidade({ comLink = false }: { comLink?: boolean }) {
 
       {comLink && (
         <div className="mt-8">
-          <TextLink to="/mentoria#comunidade">Conhecer a comunidade</TextLink>
+          <TextLink to="/programa#comunidade">Conhecer a comunidade</TextLink>
         </div>
       )}
     </section>

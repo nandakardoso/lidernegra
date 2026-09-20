@@ -12,7 +12,7 @@ React + Vite + TypeScript + Tailwind CSS (confirmado pelo usuário).
 
 ## Users
 
-- **Mulheres que se autodeclaram pretas ou pardas** (critério oficial de seleção) interessadas em desenvolvimento profissional, liderança, carreira, empreendedorismo, networking, autoconhecimento, protagonismo e troca com outras mulheres. Público principal do site: potenciais inscritas na mentoria.
+- **Mulheres negras (pretas e pardas)**, critério oficial de seleção: "se autodeclararem pretas ou pardas". Regra de texto: na primeira menção escrever "mulheres negras (pretas e pardas)"; depois, "mulheres negras". Interessadas em desenvolvimento profissional, liderança, carreira, empreendedorismo, networking, autoconhecimento, protagonismo e troca com outras mulheres. Público principal do site: potenciais inscritas na mentoria.
 - **Mentoras**: mulheres profissionais que desejam compartilhar experiência e conhecimento, contribuindo para o desenvolvimento de outras mulheres.
 - **Empresas e organizações**: potenciais parceiras, patrocinadoras ou apoiadoras da iniciativa.
 - **Comunidade geral**: pessoas interessadas em conhecer e divulgar a iniciativa.
@@ -40,11 +40,11 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
 
 ## Capabilities and Constraints
 
-- Site institucional multi-página em React + Vite, publicado no Vercel (https://lidernegra.vercel.app), com código no GitHub (nandakardoso/lidernegra). Navegação: Início, Nossa história (história, linha do tempo e impacto), O programa (jornada, comunidade e mentoras), Parcerias, FAQ, Próxima edição (/inscreva-se) e Área da Mentorada (apenas ponto de entrada, "Em breve").
+- Site institucional em React + Vite, publicado no Vercel (https://lidernegra.vercel.app), com código no GitHub (nandakardoso/lidernegra). Páginas: Início, Nossa história (`/historia`: origem, impacto, linha do tempo), O programa (`/programa`: jornada e comunidade), Como participar (`/participar`: benefícios, pré-requisitos, seleção e contato), FAQ (`/faq`, 7 perguntas), Área da Mentorada (`/area-da-mentorada`, apenas ponto de entrada) e Política de Privacidade. Menu: Nossa história, O programa, FAQ e o botão "Como participar". As URLs antigas redirecionam (301) pelo `vercel.json`. Não há página de Parcerias: o apoio de organizações está na FAQ e no rodapé ("Para organizações").
 - Não há backend. A Área da Mentorada tem um formulário de login (Nome e Senha) sem autenticação real: ele avisa que o acesso não está ativo e não envia nem guarda dados. Ele dará acesso à aba de materiais, aulas e conteúdos (Etapa 2). Os contatos reais são e-mail (lidernegra.x@gmail.com), WhatsApp (+55 21 97146-4241), Instagram (@lidernegraoficial) e LinkedIn (company/lidernegra), centralizados em `src/data/contato.ts`.
 - **Inscrições fechadas no momento** (informado pelo usuário em 19/09/2026). Todas as chamadas para participar devem dizer isso; atualizar a FAQ e a página /inscreva-se quando o status mudar.
-- Seções sem conteúdo real ficam ocultas ou mostram uma mensagem honesta, sem placeholders visíveis: Nossos Apoiadores (`src/data/apoiadores.ts`, vazia), perfis de mentoras (`src/data/mentoras.ts`, vazia) e fotos das turmas na linha do tempo (espaço reservado).
-- Responsivo, acessível e com SEO: título e descrição por rota, `robots.txt`, `sitemap.xml`, imagem de compartilhamento, dados estruturados e redirecionamentos das rotas antigas (/impacto, /mentoras, /comunidade).
+- Seções sem conteúdo real ficam ocultas até haver dados: Nossos Apoiadores (`src/data/apoiadores.ts`), perfis de mentoras (`src/data/mentoras.ts`, aparece em O programa) e fotos das turmas na linha do tempo (campo `foto`).
+- Responsivo, acessível e com SEO: o build pré-renderiza o `<head>` de cada rota (`scripts/gerar-paginas.mjs`, dados em `src/data/seo.json`) com título, descrição, canonical, Open Graph e indexação corretos; `404.html` real com status 404; `robots.txt`, `sitemap.xml` e dados estruturados.
 - Conteúdo separado do código em `src/data/`. Estrutura: components/, pages/, sections/, assets/, data/.
 - Etapa 2 (futura, a criar depois): depois de logar, a mentorada abre uma landing page com conteúdos, aulas e PDFs (materiais, aulas e conteúdos). O login atual da Área da Mentorada é só visual. Ainda não definidos: como as contas são criadas, onde os arquivos ficam protegidos e a estrutura da landing page.
 

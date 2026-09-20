@@ -12,8 +12,8 @@ const canais: { canal: Canal; nome: string; href: string; externo: boolean }[] =
 
 export function Footer() {
   return (
-    <footer className="bg-wine-950 text-cream-100" style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}>
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10">
+    <footer className="bg-wine-900 text-cream-100" style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}>
+      <div className="mx-auto max-w-6xl px-6 py-16 md:px-10">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <img src={logo} alt="LÍDERNEGRA" width={491} height={86} className="h-12 w-auto" />
@@ -23,11 +23,10 @@ export function Footer() {
           <nav aria-label="Navegação do rodapé">
             <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-gold-400">Navegação</h2>
             <ul className="mt-3 text-sm">
-              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/sobre">Nossa história</Link></li>
-              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/mentoria">O programa</Link></li>
-              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/parcerias">Parcerias</Link></li>
+              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/historia">Nossa história</Link></li>
+              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/programa">O programa</Link></li>
               <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/faq">Perguntas frequentes</Link></li>
-              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/inscreva-se">Próxima edição</Link></li>
+              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/participar">Como participar</Link></li>
             </ul>
           </nav>
 
@@ -53,6 +52,8 @@ export function Footer() {
           <div>
             <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-gold-400">Institucional</h2>
             <ul className="mt-3 text-sm">
+              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/area-da-mentorada">Área da Mentorada</Link></li>
+              <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/faq">Para organizações</Link></li>
               <li><Link className="flex min-h-11 items-center hover:text-gold-400" to="/privacidade">Política de Privacidade</Link></li>
             </ul>
           </div>
