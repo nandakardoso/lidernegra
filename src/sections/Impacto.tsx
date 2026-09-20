@@ -13,7 +13,7 @@ const estilos = {
     numero: "text-gold-400",
     rotulo: "text-cream-100/85",
     nota: "text-cream-100/70",
-    palavra: "text-cream-50",
+    palavra: "text-gold-400",
   },
   claro: {
     secao: "bg-cream-100 text-ink-900",
@@ -22,7 +22,7 @@ const estilos = {
     numero: "text-wine-900",
     rotulo: "text-ink-700",
     nota: "text-ink-500",
-    palavra: "text-wine-900",
+    palavra: "text-gold-600",
   },
 } as const;
 
@@ -61,16 +61,16 @@ export function Impacto({ comLink = false, tom = "escuro", palavras = false }: I
 
         {palavras && (
           <div className={`mt-16 border-t pt-10 ${e.filete}`}>
-            <p className={`max-w-2xl font-sans text-lg leading-relaxed ${e.rotulo}`}>
+            <p className={`max-w-2xl font-sans text-base leading-relaxed md:text-lg ${e.rotulo}`}>
               No primeiro encontro da 6ª edição, em 2026, as próprias participantes escolheram palavras para falar
               do que estavam vivendo.
             </p>
             <ul
-              className="mt-6 flex flex-wrap gap-x-10 gap-y-2"
+              className="mt-5 flex flex-wrap gap-x-8 gap-y-1"
               aria-label="Palavras escolhidas pelas participantes"
             >
               {palavrasSextaEdicao.map((palavra) => (
-                <li key={palavra} className={`font-display text-3xl italic md:text-4xl ${e.palavra}`}>
+                <li key={palavra} className={`font-display text-xl italic ${e.palavra}`}>
                   {palavra}
                 </li>
               ))}
