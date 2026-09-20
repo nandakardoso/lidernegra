@@ -21,7 +21,7 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: "As inscrições estão abertas?",
     resposta:
-      "No momento, as inscrições estão fechadas. Acompanhe o Instagram @lidernegraoficial e o LinkedIn do LÍDERNEGRA, ou fale com a equipe pelo WhatsApp +55 21 97146-4241, para saber quando a próxima edição abre.",
+      "No momento, as inscrições estão fechadas. Acompanhe o Instagram @lidernegraoficial e o LinkedIn do LÍDERNEGRA, ou fale com a equipe pelo WhatsApp, para saber quando a próxima edição abre.",
   },
   {
     pergunta: "Quem pode participar?",
@@ -51,11 +51,11 @@ export const faqItems: FaqItem[] = [
   {
     pergunta: "Como minha empresa pode apoiar?",
     resposta:
-      "Empresas podem contribuir como patrocinadoras, parceiras institucionais, com cursos pela Comunidade LÍDERNEGRA ou apoiando eventos. Fale com a equipe pelo WhatsApp +55 21 97146-4241.",
+      "Empresas podem contribuir como patrocinadoras, parceiras institucionais, com cursos pela Comunidade LÍDERNEGRA ou apoiando eventos. Fale com a equipe pelo WhatsApp.",
   },
   {
     pergunta: "Onde acompanho as próximas inscrições?",
     resposta:
-      "No Instagram @lidernegraoficial e no LinkedIn do LÍDERNEGRA. Você também pode falar com a equipe pelo WhatsApp +55 21 97146-4241.",
+      "No Instagram @lidernegraoficial e no LinkedIn do LÍDERNEGRA. Você também pode falar com a equipe pelo WhatsApp.",
   },
 ];

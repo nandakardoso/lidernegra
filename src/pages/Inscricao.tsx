@@ -1,5 +1,5 @@
+import { IconeCanal, type Canal } from "../components/IconeCanal";
 import { PageHero } from "../components/PageHero";
-import { TextLink } from "../components/TextLink";
 import { contato } from "../data/contato";
 import {
   beneficios,
@@ -9,6 +9,13 @@ import {
   processoSelecao,
   publicoPrograma,
 } from "../data/prerequisitos";
+
+const canais: { canal: Canal; nome: string; detalhe?: string; acao: string; href: string; externo: boolean }[] = [
+  { canal: "whatsapp", nome: "WhatsApp", acao: "Falar com a equipe", href: contato.whatsapp, externo: true },
+  { canal: "email", nome: "E-mail", detalhe: contato.email, acao: "Escrever para a equipe", href: `mailto:${contato.email}`, externo: false },
+  { canal: "instagram", nome: "Instagram", detalhe: "@lidernegraoficial", acao: "Seguir no Instagram", href: contato.instagram, externo: true },
+  { canal: "linkedin", nome: "LinkedIn", acao: "Acompanhar no LinkedIn", href: contato.linkedin, externo: true },
+];
 
 export function Inscricao() {
   return (
@@ -63,40 +70,28 @@ export function Inscricao() {
           anúncios de abertura saem nas redes do programa, e a equipe responde dúvidas pelo WhatsApp.
         </p>
 
-        <ul className="mt-10 space-y-6">
-          <li className="border-t border-wine-900/15 pt-6">
-            <h3 className="font-display text-xl text-wine-900">WhatsApp</h3>
-            <p className="mt-1 font-sans text-base text-ink-700">{contato.whatsappTexto}</p>
-            <div className="mt-3">
-              <TextLink href={contato.whatsapp} target="_blank" rel="noopener noreferrer">
-                Falar com a equipe
-              </TextLink>
-            </div>
-          </li>
-          <li className="border-t border-wine-900/15 pt-6">
-            <h3 className="font-display text-xl text-wine-900">E-mail</h3>
-            <p className="mt-1 font-sans text-base text-ink-700">{contato.email}</p>
-            <div className="mt-3">
-              <TextLink href={`mailto:${contato.email}`}>Escrever para a equipe</TextLink>
-            </div>
-          </li>
-          <li className="border-t border-wine-900/15 pt-6">
-            <h3 className="font-display text-xl text-wine-900">Instagram</h3>
-            <p className="mt-1 font-sans text-base text-ink-700">@lidernegraoficial</p>
-            <div className="mt-3">
-              <TextLink href={contato.instagram} target="_blank" rel="noopener noreferrer">
-                Seguir no Instagram
-              </TextLink>
-            </div>
-          </li>
-          <li className="border-t border-wine-900/15 pt-6">
-            <h3 className="font-display text-xl text-wine-900">LinkedIn</h3>
-            <div className="mt-3">
-              <TextLink href={contato.linkedin} target="_blank" rel="noopener noreferrer">
-                Acompanhar no LinkedIn
-              </TextLink>
-            </div>
-          </li>
+        <ul className="mt-10">
+          {canais.map((c) => (
+            <li key={c.canal} className="border-t border-wine-900/15 last:border-b">
+              <a
+                href={c.href}
+                {...(c.externo ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="group flex items-center gap-5 py-6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500"
+              >
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-wine-900 text-gold-400 transition-colors group-hover:bg-wine-800">
+                  <IconeCanal canal={c.canal} />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block font-display text-xl text-wine-900">{c.nome}</span>
+                  {c.detalhe && <span className="block break-words font-sans text-base text-ink-700">{c.detalhe}</span>}
+                  <span className="mt-1 block font-sans text-sm font-semibold uppercase tracking-[0.08em] text-wine-800 underline decoration-gold-500 decoration-2 underline-offset-8 group-hover:decoration-4">
+                    {c.acao}
+                    {c.externo && <span className="sr-only"> (abre em nova aba)</span>}
+                  </span>
+                </span>
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
     </>

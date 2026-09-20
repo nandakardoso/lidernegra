@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-lidernegra.png";
+import { IconeCanal, type Canal } from "./IconeCanal";
+import { contato } from "../data/contato";
+
+const canais: { canal: Canal; nome: string; href: string; externo: boolean }[] = [
+  { canal: "instagram", nome: "Instagram", href: contato.instagram, externo: true },
+  { canal: "linkedin", nome: "LinkedIn", href: contato.linkedin, externo: true },
+  { canal: "email", nome: "E-mail", href: `mailto:${contato.email}`, externo: false },
+  { canal: "whatsapp", nome: "WhatsApp", href: contato.whatsapp, externo: true },
+];
 
 export function Footer() {
   return (
@@ -25,27 +34,19 @@ export function Footer() {
           <div>
             <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-gold-400">Conecte-se</h2>
             <ul className="mt-3 text-sm">
-              <li>
-                <a className="flex min-h-11 items-center hover:text-gold-400" href="https://www.instagram.com/lidernegraoficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
-              </li>
-              <li>
-                <a className="flex min-h-11 items-center hover:text-gold-400" href="https://www.linkedin.com/company/lidernegra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              </li>
-              <li>
-                <a className="flex min-h-11 items-center hover:text-gold-400" href="mailto:lidernegra.x@gmail.com">
-                  lidernegra.x@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  className="flex min-h-11 items-center hover:text-gold-400"
-                  href="https://wa.me/5521971464241"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WhatsApp: +55 21 97146-4241
-                </a>
-              </li>
+              {canais.map((c) => (
+                <li key={c.canal}>
+                  <a
+                    className="flex min-h-11 items-center gap-3 hover:text-gold-400"
+                    href={c.href}
+                    {...(c.externo ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  >
+                    <IconeCanal canal={c.canal} className="h-5 w-5 shrink-0 text-gold-400" />
+                    {c.nome}
+                    {c.externo && <span className="sr-only"> (abre em nova aba)</span>}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
