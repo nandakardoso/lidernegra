@@ -128,7 +128,8 @@ export const fechamentoHistoria: string[] = [
 ];
 
 /**
- * Foto de impacto exibida em "Uma jornada que continua". Enquanto for `undefined`, o texto ocupa a largura toda.
+ * Foto de grupo usada no Hero da Home e em "Uma jornada que continua". PENDENTE: confirmar com o LÍDERNEGRA quem são
+ * as mulheres da foto e a autorização de uso. Foto de impacto exibida em "Uma jornada que continua". Enquanto for `undefined`, o texto ocupa a largura toda.
  * Para incluir: coloque o arquivo em `public/` e preencha, por exemplo:
  *   { src: "/fotos/jornada.jpg", alt: "Descrição da foto", legenda: "Turma da 6ª edição, 2026" }
  */

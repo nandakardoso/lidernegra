@@ -61,7 +61,7 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
 
 Conteúdo real fornecido pelo usuário: a história completa do programa (origem em 2018, início em 2 de agosto de 2021, fundadora Vânia Neves, 6 edições), números oficiais (24 mulheres na primeira turma, 86% e 73% da primeira turma, mais de 750 inscritas na 6ª edição, quase 200 mulheres formadas), o logo, a foto da fundadora, uma foto de grupo, os contatos e a paleta oficial (vinho #722A38).
 
-Critérios de seleção fornecidos (nível superior, 4 anos de experiência corporativa, aspiração de liderança, sem outra mentoria nos últimos 6 meses, disponibilidade, autodeclaração preta ou parda, qualquer região com internet). Ainda não fornecido: link do Regulamento, processo seletivo, custo ou gratuidade, duração total, como ser mentora, perfis das mentoras, depoimentos, lista de apoiadores, fotos das turmas e política de privacidade completa.
+Critérios de seleção fornecidos (nível superior, 4 anos de experiência corporativa, aspiração de liderança, sem outra mentoria nos últimos 6 meses, disponibilidade, autodeclaração preta ou parda, qualquer região com internet). A foto de grupo está em uso no Hero da Home e em Nossa história por decisão do usuário; a identificação das mulheres e a autorização de uso continuam pendentes. Ainda não fornecido: link do Regulamento, processo seletivo, custo ou gratuidade, duração total, como ser mentora, perfis das mentoras, depoimentos, lista de apoiadores, fotos das turmas e política de privacidade completa.
 
 ## Product Principles
 
