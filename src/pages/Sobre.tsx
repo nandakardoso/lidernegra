@@ -2,7 +2,6 @@ import { useState } from "react";
 import { PageHero } from "../components/PageHero";
 import { TextLink } from "../components/TextLink";
 import { Impacto } from "../sections/Impacto";
-import { PalavrasEdicao } from "../sections/PalavrasEdicao";
 import {
   capitulosHistoria,
   fechamentoHistoria,
@@ -63,8 +62,7 @@ export function Sobre() {
         </div>
       </section>
 
-      <Impacto />
-      <PalavrasEdicao />
+      <Impacto tom="claro" palavras />
 
       <section className="bg-wine-950 py-24 text-cream-50">
         <div className="mx-auto max-w-5xl px-6 md:px-10">
@@ -92,12 +90,14 @@ export function Sobre() {
                     </span>
                   </span>
                   <span className="mt-2 block font-display text-2xl text-cream-50">{cap.titulo}</span>
-                  <span className="mt-6 flex flex-wrap items-end gap-x-6 gap-y-2">
-                    <span className="font-display text-5xl italic leading-none text-gold-400">{cap.numero}</span>
-                    <span className="max-w-xs pb-1 font-sans text-sm text-cream-100/70">{cap.numeroLegenda}</span>
-                  </span>
-                  <span className="mt-6 block border-l-2 border-gold-500 pl-6 font-display text-xl italic text-cream-50 md:text-2xl">
-                    {cap.frase}
+                  <span className="mt-6 block md:grid md:grid-cols-[15rem_1fr] md:items-end md:gap-10">
+                    <span className="flex flex-wrap items-end gap-x-6 gap-y-2">
+                      <span className="font-display text-5xl italic leading-none text-gold-400">{cap.numero}</span>
+                      <span className="max-w-xs pb-1 font-sans text-sm text-cream-100/70">{cap.numeroLegenda}</span>
+                    </span>
+                    <span className="mt-6 block border-l-2 border-gold-500 pl-6 font-display text-xl italic text-cream-50 md:mt-0 md:text-2xl">
+                      {cap.frase}
+                    </span>
                   </span>
                 </button>
 
@@ -187,7 +187,7 @@ export function Sobre() {
         </div>
       </section>
 
-      <section className="bg-cream-100 py-20">
+      <section className="bg-cream-100 py-14">
         <div className="mx-auto flex max-w-3xl flex-wrap items-center gap-x-10 gap-y-4 px-6 md:px-10">
           <TextLink to="/mentoria">Conhecer o programa</TextLink>
           <TextLink to="/inscreva-se">Próxima edição</TextLink>
