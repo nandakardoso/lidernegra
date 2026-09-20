@@ -1,12 +1,14 @@
 import { palavrasSextaEdicao } from "../data/impacto";
+import { Titulo } from "../components/Titulo";
+import { Kicker } from "../components/Kicker";
 
 export function PalavrasEdicao() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-24 md:px-10">
-      <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-600">6ª edição · 2026</p>
-      <h2 className="mt-4 font-display text-3xl italic text-wine-900 md:text-4xl">
+      <Kicker>6ª edição · 2026</Kicker>
+      <Titulo className="mt-4">
         Como as participantes definiram a experiência
-      </h2>
+      </Titulo>
       <p className="mt-6 max-w-2xl font-sans text-lg leading-relaxed text-ink-700">
         No primeiro encontro da sexta edição, as próprias participantes escolheram palavras para falar do que
         estavam vivendo.

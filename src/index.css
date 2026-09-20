@@ -20,6 +20,9 @@
   --color-ink-700: #3a2226;
   --color-ink-500: #6b4b50;
 
+  --tracking-kicker: 0.2em;
+  --tracking-rotulo: 0.08em;
+
   --font-display: "Playfair Display", "Iowan Old Style", Georgia, serif;
   --font-sans: "Work Sans", "Helvetica Neue", Arial, sans-serif;
 }

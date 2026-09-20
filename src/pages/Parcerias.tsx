@@ -1,6 +1,7 @@
 import { PageHero } from "../components/PageHero";
 import { TextLink } from "../components/TextLink";
 import { contato } from "../data/contato";
+import { Titulo } from "../components/Titulo";
 
 const formas = [
   "Patrocínio",
@@ -20,7 +21,7 @@ export function Parcerias() {
       </PageHero>
 
       <section className="mx-auto max-w-4xl px-6 py-24 md:px-10">
-        <h2 className="font-display text-2xl italic text-wine-900 md:text-3xl">Como apoiar</h2>
+        <Titulo tamanho="secundario">Como apoiar</Titulo>
         <ul className="mt-8 grid gap-x-10 gap-y-4 sm:grid-cols-2">
           {formas.map((forma) => (
             <li key={forma} className="border-t border-wine-900/15 pt-4 font-sans text-base font-medium text-ink-700">
@@ -30,7 +31,7 @@ export function Parcerias() {
         </ul>
 
         <div className="mt-16 border-t border-wine-900/10 pt-10">
-          <h2 className="font-display text-2xl italic text-wine-900 md:text-3xl">Quem já apoia</h2>
+          <Titulo tamanho="secundario">Quem já apoia</Titulo>
           <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-ink-700">
             Em breve, esta página vai reunir as organizações parceiras e apoiadoras do programa.
           </p>

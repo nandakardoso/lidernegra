@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Botao } from "./Botao";
 import logo from "../assets/logo-lidernegra-vinho.png";
 
 const navItems = [
@@ -50,12 +51,9 @@ export function Header() {
           <Link to="/area-da-mentorada" className="whitespace-nowrap font-sans text-sm font-medium text-wine-800 underline decoration-gold-500 decoration-2 underline-offset-8">
             Área da Mentorada
           </Link>
-          <Link
-            to="/inscreva-se"
-            className="whitespace-nowrap rounded-full bg-wine-900 px-5 py-2.5 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-wine-800"
-          >
+          <Botao to="/inscreva-se" tamanho="compacto">
             Próxima edição
-          </Link>
+          </Botao>
         </nav>
 
         <button
@@ -108,13 +106,9 @@ export function Header() {
             </NavLink>
           </li>
           <li className="pt-2">
-            <Link
-              to="/inscreva-se"
-              onClick={() => setOpen(false)}
-              className="block rounded-full bg-wine-900 px-5 py-3 text-center font-sans text-sm font-semibold text-cream-50"
-            >
+            <Botao to="/inscreva-se" bloco onClick={() => setOpen(false)}>
               Próxima edição
-            </Link>
+            </Botao>
           </li>
         </ul>
       </nav>

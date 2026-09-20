@@ -8,7 +8,7 @@ export function Hero() {
       <GoldArcMotif className="pointer-events-none absolute -top-10 right-0 h-[420px] w-[420px] md:h-[560px] md:w-[560px]" />
 
       <div className="relative mx-auto flex min-h-[80vh] max-w-7xl flex-col justify-center px-6 py-20 md:px-10 md:py-24">
-        <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-400 md:text-sm">
+        <p className="font-sans text-xs font-semibold uppercase tracking-kicker text-gold-400 md:text-sm">
           Programa de Mentoria LÍDERNEGRA
         </p>
 

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { apoiadores } from "../data/apoiadores";
+import { Titulo } from "../components/Titulo";
 
 const INTERVALO_MS = 5000;
 
@@ -84,9 +85,9 @@ export function Apoiadores() {
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="flex items-end justify-between gap-6">
-          <h2 id="titulo-apoiadores" className="font-display text-2xl italic text-wine-900 md:text-3xl">
+          <Titulo tamanho="secundario" id="titulo-apoiadores">
             Nossos Apoiadores
-          </h2>
+          </Titulo>
 
           {podeRolar && (
             <div className="flex shrink-0 items-center gap-2">

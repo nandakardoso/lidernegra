@@ -1,15 +1,16 @@
 import vania from "../assets/vania-neves.jpg";
 import { TextLink } from "../components/TextLink";
 import { origemHistoria, perguntaOrigem } from "../data/historiaLiderNegra";
+import { Titulo } from "../components/Titulo";
 
 export function Origem() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
       <div className="grid items-center gap-12 md:grid-cols-[minmax(0,1fr)_20rem] lg:grid-cols-[minmax(0,1fr)_24rem]">
         <div>
-          <h2 className="font-display text-3xl italic text-wine-900 md:text-4xl">
+          <Titulo>
             Tudo começou com uma pergunta.
-          </h2>
+          </Titulo>
 
           <div className="mt-8 max-w-2xl space-y-5 font-sans text-lg leading-relaxed text-ink-700">
             {origemHistoria.map((p) => (

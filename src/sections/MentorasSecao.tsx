@@ -4,6 +4,8 @@ import { MentoraCard } from "../components/MentoraCard";
 import { MentoraModal } from "../components/MentoraModal";
 import { TextLink } from "../components/TextLink";
 import { contato } from "../data/contato";
+import { Titulo } from "../components/Titulo";
+import { Kicker } from "../components/Kicker";
 
 export function MentorasSecao() {
   const [selected, setSelected] = useState<Mentora | null>(null);
@@ -11,10 +13,10 @@ export function MentorasSecao() {
   return (
     <section id="mentoras" className="scroll-mt-20 bg-cream-100 py-24">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
-        <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-600">Mentoras</p>
-        <h2 className="mt-4 font-display text-3xl italic text-wine-900 md:text-4xl">
+        <Kicker>Mentoras</Kicker>
+        <Titulo className="mt-4">
           Mulheres que compartilham experiência
-        </h2>
+        </Titulo>
         <p className="mt-6 max-w-2xl font-sans text-lg leading-relaxed text-ink-700">
           Profissionais experientes que dedicam, de forma voluntária, tempo e conhecimento ao desenvolvimento de
           outras mulheres.

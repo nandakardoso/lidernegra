@@ -1,12 +1,14 @@
 import { indicadoresImpacto } from "../data/impacto";
+import { Titulo } from "../components/Titulo";
 import { TextLink } from "../components/TextLink";
+import { Kicker } from "../components/Kicker";
 
 export function Impacto({ comLink = false }: { comLink?: boolean }) {
   return (
     <section id="impacto" className="scroll-mt-20 bg-wine-950 py-24 text-cream-50">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
-        <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-400">Impacto</p>
-        <h2 className="mt-4 font-display text-3xl italic md:text-4xl">O que a rede já construiu</h2>
+        <Kicker tom="sobreEscuro">Impacto</Kicker>
+        <Titulo tom="sobreEscuro" className="mt-4">O que a rede já construiu</Titulo>
 
         <dl className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           {indicadoresImpacto.map((item) => (

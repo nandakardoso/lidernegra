@@ -1,6 +1,8 @@
 import { useState, type FormEvent } from "react";
+import { Botao } from "../components/Botao";
 import { PageHero } from "../components/PageHero";
 import { TextLink } from "../components/TextLink";
+import { Titulo } from "../components/Titulo";
 
 const campo =
   "mt-2 w-full rounded-sm border border-wine-900/30 bg-cream-50 px-4 py-3 font-sans text-base text-ink-900 focus:border-wine-900 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-500";
@@ -44,7 +46,7 @@ export function AreaMentorada() {
       <section className="mx-auto max-w-5xl px-6 py-20 md:px-10 md:py-24">
         <div className="grid items-start gap-14 md:grid-cols-[minmax(0,26rem)_1fr] md:gap-20">
           <div className="bg-cream-100 p-8 md:p-10">
-            <h2 className="font-display text-2xl italic text-wine-900 md:text-3xl">Entrar</h2>
+            <Titulo tamanho="secundario">Entrar</Titulo>
             <p className="mt-3 font-sans text-base leading-relaxed text-ink-700">
               O acesso ainda não está ativo. Por enquanto, este formulário não envia nem guarda nenhuma informação.
             </p>
@@ -69,12 +71,9 @@ export function AreaMentorada() {
                   className={campo}
                 />
               </div>
-              <button
-                type="submit"
-                className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-wine-900 px-8 py-3 font-sans text-sm font-semibold text-cream-50 transition-colors hover:bg-wine-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-wine-900"
-              >
+              <Botao type="submit" bloco>
                 Entrar
-              </button>
+              </Botao>
               {tentou && (
                 <p role="status" className="font-sans text-base leading-relaxed text-wine-900">
                   A Área da Mentorada ainda não está disponível. Assim que for lançada, você poderá entrar por aqui.
@@ -84,7 +83,7 @@ export function AreaMentorada() {
           </div>
 
           <div className="md:pt-8">
-            <h2 className="font-display text-2xl italic text-wine-900 md:text-3xl">O que você encontrará</h2>
+            <Titulo tamanho="secundario">O que você encontrará</Titulo>
             <ul className="mt-8">
               {conteudos.map((item) => (
                 <li

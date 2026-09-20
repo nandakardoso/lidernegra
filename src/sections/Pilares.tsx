@@ -1,9 +1,10 @@
 import { pilaresMentoria } from "../data/pilares";
+import { Titulo } from "../components/Titulo";
 
 export function Pilares() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
-      <h2 className="font-display text-3xl italic text-wine-900 md:text-4xl">Pilares da mentoria</h2>
+      <Titulo>Pilares da mentoria</Titulo>
 
       <div className="mt-14 grid gap-x-12 gap-y-12 sm:grid-cols-2">
         {pilaresMentoria.map((pilar, i) => (

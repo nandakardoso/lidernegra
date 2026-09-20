@@ -13,6 +13,8 @@ import {
   perguntaOrigem,
 } from "../data/historiaLiderNegra";
 import vania from "../assets/vania-neves.jpg";
+import { Titulo } from "../components/Titulo";
+import { Kicker } from "../components/Kicker";
 
 export function Sobre() {
   const [aberto, setAberto] = useState<string | null>(null);
@@ -26,12 +28,12 @@ export function Sobre() {
       <section className="mx-auto max-w-5xl px-6 py-24 md:px-10">
         <div className="grid items-start gap-12 md:grid-cols-[minmax(0,1fr)_20rem] lg:grid-cols-[minmax(0,1fr)_24rem]">
           <div>
-            <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-600">
+            <Kicker>
               A história do LÍDERNEGRA
-            </p>
-            <h2 className="mt-4 font-display text-3xl italic text-wine-900 md:text-4xl">
+            </Kicker>
+            <Titulo className="mt-4">
               Um sonho que nasceu de um incômodo e se transformou em movimento
-            </h2>
+            </Titulo>
             <div className="mt-10 space-y-5 font-sans text-lg leading-relaxed text-ink-700">
               {origemHistoria.map((p) => (
                 <p key={p}>{p}</p>
@@ -63,8 +65,8 @@ export function Sobre() {
 
       <section className="bg-wine-950 py-24 text-cream-50">
         <div className="mx-auto max-w-5xl px-6 md:px-10">
-          <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-gold-400">Linha do tempo</p>
-          <h2 className="mt-4 font-display text-3xl italic md:text-4xl">De 2021 a 2026</h2>
+          <Kicker tom="sobreEscuro">Linha do tempo</Kicker>
+          <Titulo tom="sobreEscuro" className="mt-4">De 2021 a 2026</Titulo>
 
           <ol className="relative mt-16 space-y-20 border-l border-gold-500/40 pl-8 md:pl-14">
             {capitulosHistoria.map((cap) => (
@@ -126,7 +128,7 @@ export function Sobre() {
                       />
                     ) : (
                       <div className="flex aspect-[16/9] w-full items-center justify-center rounded-sm border border-dashed border-gold-500/40 bg-wine-900/40">
-                        <span className="font-sans text-xs uppercase tracking-[0.2em] text-cream-100/50">
+                        <span className="font-sans text-xs uppercase tracking-kicker text-cream-100/50">
                           Foto da turma {cap.ano}
                         </span>
                       </div>
@@ -152,7 +154,7 @@ export function Sobre() {
           }
         >
           <div>
-            <h3 className="font-display text-2xl italic text-wine-900 md:text-3xl">Uma jornada que continua</h3>
+            <Titulo as="h3" tamanho="secundario">Uma jornada que continua</Titulo>
             <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-ink-700">
               {jornadaContinua.map((p) => (
                 <p key={p}>{p}</p>
@@ -163,7 +165,7 @@ export function Sobre() {
                 <p key={p}>{p}</p>
               ))}
             </div>
-            <p className="mt-10 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-wine-900">
+            <p className="mt-10 font-sans text-sm font-semibold uppercase tracking-kicker text-wine-900">
               LÍDERNEGRA
             </p>
             <p className="mt-1 font-display text-xl italic text-gold-600">Orienta. Empodera. Transforma.</p>
