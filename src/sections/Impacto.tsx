@@ -41,7 +41,7 @@ export function Impacto({ comLink = false, tom = "escuro", palavras = false }: I
     <section id="impacto" className={`scroll-mt-20 py-20 md:py-24 ${e.secao}`}>
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <Kicker tom={e.tomMarca}>Impacto</Kicker>
-        <Titulo tom={e.tomMarca} className="mt-4">
+        <Titulo tom={e.tomMarca} tamanho="secundario" className="mt-4">
           O que a rede já construiu
         </Titulo>
 

@@ -5,7 +5,7 @@ import { Titulo } from "../components/Titulo";
 export function Comunidade({ comLink = false }: { comLink?: boolean }) {
   return (
     <section id="comunidade" className="mx-auto max-w-5xl scroll-mt-20 px-6 py-24 md:px-10">
-      <Titulo tamanho="destaque">
+      <Titulo>
         Uma mentoria termina. Uma rede permanece.
       </Titulo>
       <p className="mt-6 max-w-2xl font-sans text-lg leading-relaxed text-ink-700">

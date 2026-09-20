@@ -69,7 +69,7 @@ export function Sobre() {
           <Kicker tom="sobreEscuro">Linha do tempo</Kicker>
           <Titulo tom="sobreEscuro" className="mt-4">De 2021 a 2026</Titulo>
 
-          <ol className="relative mt-16 space-y-20 border-l border-gold-500/40 pl-8 md:pl-14">
+          <ol className="relative mt-14 space-y-14 border-l border-gold-500/40 pl-8 md:pl-14">
             {capitulosHistoria.map((cap) => (
               <li key={cap.ano} className="relative">
                 <span
@@ -84,18 +84,18 @@ export function Sobre() {
                   className="group block w-full text-left"
                 >
                   <span className="flex items-baseline justify-between gap-4">
-                    <span className="font-display text-5xl italic text-gold-400 md:text-6xl">{cap.ano}</span>
+                    <span className="font-display text-2xl italic text-gold-400 md:text-3xl">{cap.ano}</span>
                     <span className="shrink-0 font-sans text-sm font-medium text-gold-400 group-hover:text-gold-500">
                       {aberto === cap.ano ? "Recolher −" : "Ler mais +"}
                     </span>
                   </span>
-                  <span className="mt-2 block font-display text-2xl text-cream-50">{cap.titulo}</span>
-                  <span className="mt-6 block md:grid md:grid-cols-[15rem_1fr] md:items-end md:gap-10">
+                  <span className="mt-2 block font-display text-lg text-cream-50 md:text-xl">{cap.titulo}</span>
+                  <span className="mt-6 block md:grid md:grid-cols-[13rem_1fr] md:items-end md:gap-10">
                     <span className="flex flex-wrap items-end gap-x-6 gap-y-2">
-                      <span className="font-display text-5xl italic leading-none text-gold-400">{cap.numero}</span>
+                      <span className="font-display text-xl italic leading-none text-gold-400 md:text-2xl">{cap.numero}</span>
                       <span className="max-w-xs pb-1 font-sans text-sm text-cream-100/70">{cap.numeroLegenda}</span>
                     </span>
-                    <span className="mt-6 block border-l-2 border-gold-500 pl-6 font-display text-xl italic text-cream-50 md:mt-0 md:text-2xl">
+                    <span className="mt-6 block border-l-2 border-gold-500 pl-6 font-display text-lg italic text-cream-50 md:mt-0 md:text-xl">
                       {cap.frase}
                     </span>
                   </span>

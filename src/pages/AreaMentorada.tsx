@@ -90,7 +90,7 @@ export function AreaMentorada() {
                   key={item}
                   className="flex items-center justify-between gap-4 border-t border-wine-900/15 py-6 last:border-b"
                 >
-                  <span className="font-display text-3xl text-wine-900">{item}</span>
+                  <span className="font-display text-xl text-wine-900 md:text-2xl">{item}</span>
                   <span className="flex shrink-0 items-center gap-2 font-sans text-sm text-ink-500">
                     <Cadeado />
                     Em breve
