@@ -63,6 +63,9 @@ export function Sobre() {
         </div>
       </section>
 
+      <Impacto />
+      <PalavrasEdicao />
+
       <section className="bg-wine-950 py-24 text-cream-50">
         <div className="mx-auto max-w-5xl px-6 md:px-10">
           <Kicker tom="sobreEscuro">Linha do tempo</Kicker>
@@ -143,9 +146,6 @@ export function Sobre() {
           </ol>
         </div>
       </section>
-
-      <Impacto />
-      <PalavrasEdicao />
 
       <section className="mx-auto max-w-6xl px-6 py-24 md:px-10">
         <div
