@@ -46,7 +46,7 @@ O LíderNegra não é apresentado como "apenas" uma mentoria profissional, mas c
 - Seções sem conteúdo real ficam ocultas ou mostram uma mensagem honesta, sem placeholders visíveis: Nossos Apoiadores (`src/data/apoiadores.ts`, vazia), perfis de mentoras (`src/data/mentoras.ts`, vazia) e fotos das turmas na linha do tempo (espaço reservado).
 - Responsivo, acessível e com SEO: título e descrição por rota, `robots.txt`, `sitemap.xml`, imagem de compartilhamento, dados estruturados e redirecionamentos das rotas antigas (/impacto, /mentoras, /comunidade).
 - Conteúdo separado do código em `src/data/`. Estrutura: components/, pages/, sections/, assets/, data/.
-- Etapa 2 (futura): Área da Mentorada com login e "Minha Jornada". Não implementada.
+- Etapa 2 (futura, a criar depois): depois de logar, a mentorada abre uma landing page com conteúdos, aulas e PDFs (materiais, aulas e conteúdos). O login atual da Área da Mentorada é só visual. Ainda não definidos: como as contas são criadas, onde os arquivos ficam protegidos e a estrutura da landing page.
 
 ## Brand Commitments
 
